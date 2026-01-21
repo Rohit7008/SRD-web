@@ -3,6 +3,7 @@ import { Playfair_Display, Manrope } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { StickyMobileCTA } from "@/components/layout/StickyMobileCTA";
+import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -38,6 +39,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <WhatsAppFloatingButton />
           <StickyMobileCTA />
         </div>
       </body>

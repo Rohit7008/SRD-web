@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
+
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -19,94 +19,172 @@ export default function Home() {
 
 
 
-      {/* Services Section */}
+      {/* Products Section */}
       <Section id="services" className="bg-white">
         <Container>
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
             <MotionContainer className="max-w-2xl">
-              <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-sm mb-3 block">Our Expertise</span>
+              <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-sm mb-3 block">Our Products</span>
               <h2 className="text-4xl md:text-5xl font-heading font-medium text-zinc-900 mb-4 tracking-tight leading-tight">
-                Engineered for <span className="italic font-serif">Excellence</span>
+                UPVC <span className="italic font-serif">&amp;</span> Aluminium <span className="italic font-serif">Systems</span>
               </h2>
               <p className="text-zinc-500 text-lg leading-relaxed max-w-xl">
-                We deliver comprehensive architectural solutions, from precision-engineered windows to complete interior transformations.
+                We manufacture high-quality, eco-friendly, and precise window and door systems tailored to your needs.
               </p>
             </MotionContainer>
-            <Button variant="outline" className="hidden md:flex rounded-full px-8 h-12" asChild>
-              <Link href="/services">View All Services</Link>
-            </Button>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            <ServiceCard
-              title="UPVC Windows"
-              description="Energy-efficient, noise-canceling, and durable UPVC window systems optimized for Indian weather."
-              href="/services/upvc-windows"
-              specs={["Sound Proof", "Weather Resistant", "Low Maintenance"]}
-              priceHint="Most Popular"
-              image="/images/upvc.png"
-            />
-            <ServiceCard
-              title="Aluminium Systems"
-              description="Sleek, minimal profile aluminium windows and doors for modern architectural aesthetics."
-              href="/services/aluminium-windows"
-              specs={["Slim Profile", "High Strength", "Premium Finish"]}
-              priceHint="Premium"
-              image="/images/aluminium.png"
-            />
-            <ServiceCard
-              title="Commercial Glazing"
-              description="Structural glazing and facade solutions for office buildings and commercial complexes."
-              href="/services/commercial-glazing"
-              specs={["Structural Strength", "Modern Look", "Safety Glass"]}
-              priceHint="B2B Ready"
-              image="/images/commercial.png"
-            />
-            <ServiceCard
-              title="Door Solutions"
-              description="Secure and stylish main doors, french doors, and sliding systems for every need."
-              href="/services/doors"
-              specs={["High Security", "Custom Design", "Durable"]}
-              image="/images/doors.png"
-            />
-            <ServiceCard
-              title="Interior Decor"
-              description="End-to-end interior execution including false ceilings, wall paneling and custom furniture."
-              href="/services/interiors"
-              specs={["Turnkey", "False Ceilings", "Wall Paneling"]}
-              image="/images/interiors.png"
-            />
-            {/* CTA Card for Service Grid */}
-            <div className="rounded-[2.5rem] border-2 border-dashed border-zinc-200 bg-zinc-50 flex flex-col items-center justify-center p-10 text-center h-full min-h-[400px] transition-colors hover:bg-zinc-100 hover:border-zinc-300">
-              <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-sm mb-6">
-                <span className="text-2xl">✨</span>
-              </div>
-              <h3 className="text-2xl font-heading font-bold text-zinc-900 mb-3">Need something custom?</h3>
-              <p className="text-zinc-500 mb-8 max-w-xs text-sm leading-relaxed">We specialize in bespoke architectural solutions tailored to your unique requirements.</p>
-              <Button className="rounded-full px-8 h-12" asChild>
-                <Link href="/contact">Contact Our Team</Link>
+            <div className="flex-shrink-0">
+              <Button size="lg" className="rounded-xl h-12 bg-zinc-900 text-white hover:bg-zinc-800 shadow-lg" asChild>
+                <a href="/Sai Ram Decorator Brochure.pdf" download="Sai_Ram_Decorators_Brochure.pdf" target="_blank" rel="noopener noreferrer">
+                  <Download className="w-4 h-4 mr-2" />
+                  Download Brochure
+                </a>
               </Button>
             </div>
           </div>
 
-          <div className="mt-10 md:hidden pb-12">
-            <Button variant="outline" className="w-full h-14 rounded-2xl text-base font-bold" asChild>
-              <Link href="/services">View All Services</Link>
-            </Button>
+
+          <div className="space-y-16">
+            {/* UPVC Category */}
+            <div>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-8 border-l-4 border-blue-600 pl-4">UPVC Windows & Doors</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-6">
+                <ServiceCard
+                  title="UPVC Sliding Windows"
+                  description="Traditional style with contemporary performance. Two sashes sliding horizontally."
+                  href="/products/upvc/sliding-windows"
+                  specs={["Smooth Glide", "Ventilation"]}
+                  image="/images/upvc_sliding_window_1769009483560.png"
+                />
+                <ServiceCard
+                  title="UPVC Fixed Windows"
+                  description="Great way of bringing light and views into a space. Affordable and energy efficient."
+                  href="/products/upvc/fixed-windows"
+                  specs={["Max Light", "Affordable"]}
+                  image="/images/upvc_fixed_window_view_1769016648166.png"
+                />
+                <ServiceCard
+                  title="UPVC Casement"
+                  description="Sashes open out on special friction hinges to stay open in any position."
+                  href="/products/upvc/casement-windows"
+                  specs={["Friction Hinges", "Customizable"]}
+                  image="/images/upvc.png"
+                />
+                <ServiceCard
+                  title="UPVC French Windows"
+                  description="Two fully opening sashes with a floating mullion and excellent thermal insulation."
+                  href="/products/upvc/french-windows"
+                  specs={["Thermal Insulation", "Sound Proof"]}
+                  image="/images/upvc_french_doors_1769009826593.png"
+                />
+                <ServiceCard
+                  title="UPVC Sliding Doors"
+                  description="Classic good looks with a maximum glass area which optimizes visibility."
+                  href="/products/upvc/sliding-doors"
+                  specs={["Max Visibility", "Space Saving"]}
+                  image="/images/upvc_sliding_patio_door_1769017888626.png"
+                />
+                <ServiceCard
+                  title="French Doors"
+                  description="Charming addition to any home. Extensive opening allows unrestricted access."
+                  href="/products/upvc/french-doors"
+                  specs={["Garden Access", "Elegant"]}
+                  image="/images/french_door_garden_1769016541444.png"
+                />
+                <ServiceCard
+                  title="Single Leaf Doors"
+                  description="Suitable for domestic and light commercial use. Compatible with wide range of hardware."
+                  href="/products/upvc/single-leaf-doors"
+                  specs={["Versatile", "Secure", "Modern"]}
+                  image="/images/single_leaf_door_1769016600646.png"
+                />
+                <ServiceCard
+                  title="Double Leaf Doors"
+                  description="Double sash for larger clear openings. Available in swing or out swing option."
+                  href="/products/upvc/double-leaf-doors"
+                  specs={["Large Opening", "Heavy Duty"]}
+                  image="/images/double_leaf_door_1769016625650.png"
+                />
+              </div>
+            </div>
+
+            {/* Aluminium Category */}
+            <div>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-8 border-l-4 border-zinc-600 pl-4">Aluminium Systems</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-6">
+                <ServiceCard
+                  title="Aluminium Sliding"
+                  description="Uniquely designed to carry a wide range of glass thickness for sound reduction."
+                  href="/products/aluminium/sliding-windows"
+                  specs={["Sound Reduction", "Heavy Duty"]}
+                  image="/images/aluminium_sliding_window_modern_1769016564516.png"
+                />
+                <ServiceCard
+                  title="Aluminium Fixed"
+                  description="Admit daylight in acceptable and consistent quantities while maintaining temperature."
+                  href="/products/aluminium/fixed-windows"
+                  specs={["Daylight", "Temp Control"]}
+                  image="/images/upvc_fixed_window_view_1769016648166.png"
+                />
+                <ServiceCard
+                  title="Aluminium Casement"
+                  description="Strong, durable, and light material with a clean, ultra-slim frame design."
+                  href="/products/aluminium/casement-windows"
+                  specs={["Slim Frame", "Durable"]}
+                  image="/images/aluminium_casement_window_1769010141339.png"
+                />
+                <ServiceCard
+                  title="Combination Windows"
+                  description="Integration of sliding, casement, and fixed windows. Versatile designs."
+                  href="/products/aluminium/combination-windows"
+                  specs={["Versatile", "Custom Design"]}
+                  image="/images/combination_window_1769016525414.png"
+                />
+                <ServiceCard
+                  title="Aluminium Sliding Door"
+                  description="Give you more glass and less frame which results in more light being let through."
+                  href="/products/aluminium/sliding-doors"
+                  specs={["More Glass", "Brighter Rooms"]}
+                  image="/images/aluminium_sliding_window_modern_1769016564516.png"
+                />
+                <ServiceCard
+                  title="Double Leaf Front Door"
+                  description="Suit wider door openings. Two door panels which swing outwards."
+                  href="/products/aluminium/double-leaf-front-doors"
+                  specs={["Wider Openings", "Outward Swing"]}
+                  image="/images/double_leaf_door_1769016625650.png"
+                />
+                <ServiceCard
+                  title="Toughened Glass"
+                  description="Glass partitions for offices or homes to split spaces while utilizing light."
+                  href="/products/aluminium/partitions"
+                  specs={["Modern Office", "Light & Space"]}
+                  image="/images/toughened_glass_partition_1769016480903.png"
+                />
+                <ServiceCard
+                  title="Glass & Board"
+                  description="Aluminium frames with glass panes or particle board. Ideal for partitions."
+                  href="/products/aluminium/board-partitions"
+                  specs={["Privacy", "Office Cubicles"]}
+                  image="/images/glass_particle_board_partition_1769016502970.png"
+                />
+              </div>
+            </div>
           </div>
         </Container>
       </Section>
+
 
       {/* Why Us / Value Proposition */}
       <Section className="bg-zinc-50 border-t border-zinc-200 overflow-hidden">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             <div className="relative h-[450px] lg:h-[600px] group order-2 lg:order-1">
-              <div className="absolute inset-4 border border-zinc-300 rounded-[2rem] translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform" />
+              <div className="absolute inset-4 border border-blue-200 rounded-[2rem] translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform" />
               <div className="relative h-full w-full bg-zinc-200 rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
                   src="/images/factory.png"
-                  alt="Sai Ram Decorators Process"
+                  alt="Sai Ram Decorators Manufacturing"
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
@@ -115,21 +193,21 @@ export default function Home() {
 
             <div className="order-1 lg:order-2 space-y-8">
               <div className="space-y-4">
-                <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-sm block">The Sai Ram Advantage</span>
+                <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-sm block">The Sai Ram Difference</span>
                 <h2 className="text-4xl md:text-5xl font-heading font-medium text-zinc-900 tracking-tight leading-tight">
-                  Crafting spaces that <span className="italic font-serif">Inspire</span>
+                  Authentic Style, <span className="italic font-serif">Modern Performance</span>
                 </h2>
                 <p className="text-zinc-500 text-lg leading-relaxed">
-                  We don&apos;t just clear orders; we partner with you to deliver spaces that inspire. Our commitment to quality is backed by over a decade of excellence.
+                  As an independently owned company, we choose the products we manufacture to best suit our customer requirements. Our products are carved out from the finest quality raw material and tested to industry standards.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 gap-4">
                 {[
-                  { title: "Precision Engineering", description: "Top-grade materials & German CNC machinery." },
-                  { title: "Transparent Pricing", description: "Detailed quotations with no hidden costs." },
-                  { title: "Expert Installation", description: "Certified installers ensure lifelong performance." },
-                  { title: "Post-Sales Support", description: "Dedicated team for hassle-free maintenance." }
+                  { title: "Precise Designs", description: "Carved from finest quality raw materials." },
+                  { title: "Eco-Friendly", description: "Nature-friendly materials and manufacturing." },
+                  { title: "Superior Strength", description: "Tested and checked as per industry standards." },
+                  { title: "Budget Friendly", description: "Quality within the budge, helping you make the right decisions." }
                 ].map((item, i) => (
                   <motion.div
                     key={i}
@@ -137,7 +215,7 @@ export default function Home() {
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
                     className="flex items-center gap-5 p-4 rounded-2xl bg-white border border-zinc-100 shadow-sm hover:shadow-md transition-all group pointer-events-auto"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-zinc-50 text-zinc-900 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-colors shrink-0">
+                    <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-900 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
                       <CheckCircle2 className="w-5 h-5 font-bold" />
                     </div>
                     <div>
@@ -156,13 +234,13 @@ export default function Home() {
       <section className="py-24 md:py-40 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero.png"
-            alt="Luxury Interior"
+            src="/images/cta_background_luxury_interior_1769018407384.png"
+            alt="Luxury Interior Transformation"
             fill
-            className="object-cover opacity-20 scale-110"
+            className="object-cover opacity-60 scale-105"
           />
-          <div className="absolute inset-0 bg-black/95" />
-          <div className="absolute bottom-0 left-0 w-full h-[500px] bg-gradient-to-t from-zinc-900 via-transparent to-transparent opacity-80" />
+          {/* Gradient Overlay for vibrancy */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-zinc-900/80 to-black/90" />
         </div>
 
         <Container className="relative z-10 text-center px-6">
@@ -175,21 +253,18 @@ export default function Home() {
             <h2 className="text-4xl md:text-7xl font-heading font-medium text-white tracking-tight leading-tight">
               Ready to <span className="italic text-white/80 font-serif">transform</span> <br className="hidden md:block" /> your space?
             </h2>
-            <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
-              Book a consultation with our design experts today. We'll help you create a home that reflects your unique style.
+            <p className="text-zinc-200 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+              Book a consultation with our design experts today. We&apos;ll help you create a home that reflects your unique style.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Button size="lg" className="w-full sm:w-auto h-16 px-12 text-lg bg-white text-zinc-900 hover:bg-zinc-200 shadow-xl rounded-2xl md:rounded-full transition-all active:scale-95 font-bold">
                 Book Free Site Visit
               </Button>
-              <Button size="lg" variant="outline" className="w-full sm:w-auto h-16 px-12 text-lg bg-transparent border-2 border-white/30 text-white hover:bg-white hover:text-zinc-900 rounded-2xl md:rounded-full backdrop-blur-md transition-all active:scale-95 font-bold">
-                Contact Us
-              </Button>
             </div>
           </motion.div>
         </Container>
       </section>
-    </div>
+    </div >
   );
 }

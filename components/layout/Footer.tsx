@@ -5,12 +5,12 @@ import { Container } from "@/components/ui/container"
 
 export function Footer() {
     return (
-        <footer className="bg-zinc-50 pt-20 pb-8 border-t border-zinc-200">
+        <footer className="bg-zinc-50 pt-12 pb-6 border-t border-zinc-200">
             <Container>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     <div>
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="relative w-10 h-10 flex-shrink-0">
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="relative w-8 h-8 flex-shrink-0">
                                 <Image
                                     src="/images/logo.png"
                                     alt="Sai Ram Decorators Logo"
@@ -22,12 +22,12 @@ export function Footer() {
                                 Sai Ram Decorators
                             </span>
                         </div>
-                        <p className="text-zinc-500 text-sm leading-relaxed mb-6">
+                        <p className="text-zinc-500 text-sm leading-relaxed mb-6 max-w-xs">
                             Premium architectural solutions for modern homes and commercial spaces. Specializing in UPVC, Aluminium, and high-end decor.
                         </p>
-                        <div className="flex gap-4">
+                        <div className="flex gap-3">
                             {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-                                <Link key={i} href="#" className="w-10 h-10 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-zinc-900 hover:border-zinc-900 transition-all">
+                                <Link key={i} href="#" className="w-9 h-9 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-zinc-900 hover:border-zinc-900 transition-all">
                                     <Icon className="w-4 h-4" />
                                 </Link>
                             ))}
@@ -35,46 +35,57 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="font-heading font-semibold text-zinc-900 mb-6">Services</h4>
-                        <ul className="space-y-4 text-sm text-zinc-500">
-                            <li><Link href="/services/upvc-windows" className="hover:text-zinc-900 transition-colors">UPVC Windows</Link></li>
-                            <li><Link href="/services/aluminium-windows" className="hover:text-zinc-900 transition-colors">Aluminium Systems</Link></li>
-                            <li><Link href="/services/commercial-glazing" className="hover:text-zinc-900 transition-colors">Commercial Glazing</Link></li>
-                            <li><Link href="/services/doors" className="hover:text-zinc-900 transition-colors">Door Solutions</Link></li>
+                        <h4 className="font-heading font-bold text-zinc-900 mb-4 text-base uppercase tracking-wide">Services</h4>
+                        <ul className="space-y-3 text-base text-zinc-500">
+                            <li><Link href="/products/upvc" className="hover:text-zinc-900 transition-colors">UPVC Windows & Doors</Link></li>
+                            <li><Link href="/products/aluminium" className="hover:text-zinc-900 transition-colors">Aluminium Systems</Link></li>
+                            <li><Link href="/products/partitions" className="hover:text-zinc-900 transition-colors">Partitions & Glazing</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="font-heading font-semibold text-zinc-900 mb-6">Company</h4>
-                        <ul className="space-y-4 text-sm text-zinc-500">
-                            <li><Link href="/why-us" className="hover:text-zinc-900 transition-colors">About Us</Link></li>
-                            <li><Link href="/projects" className="hover:text-zinc-900 transition-colors">Our Projects</Link></li>
-                            <li><Link href="/careers" className="hover:text-zinc-900 transition-colors">Careers</Link></li>
+                        <h4 className="font-heading font-bold text-zinc-900 mb-4 text-base uppercase tracking-wide">Company</h4>
+                        <ul className="space-y-3 text-base text-zinc-500">
+                            <li><Link href="/about" className="hover:text-zinc-900 transition-colors">About Us</Link></li>
+                            <li><Link href="/projects" className="hover:text-zinc-900 transition-colors">Projects</Link></li>
                             <li><Link href="/contact" className="hover:text-zinc-900 transition-colors">Contact</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="font-heading font-semibold text-zinc-900 mb-6">Visit Us</h4>
-                        <address className="text-sm text-zinc-500 not-italic leading-relaxed">
-                            123, Tech Park Road,<br />
-                            Whitefield, Bengaluru,<br />
-                            Karnataka 560066<br />
-                            <br />
-                            <a href="tel:+919876543210" className="hover:text-zinc-900 transition-colors">+91 98765 43210</a><br />
-                            <a href="mailto:hello@sairamdecorators.com" className="hover:text-zinc-900 transition-colors">hello@sairamdecorators.com</a>
-                        </address>
+                        <h4 className="font-heading font-bold text-zinc-900 mb-4 text-base uppercase tracking-wide">Visit Us</h4>
+                        <div className="rounded-xl overflow-hidden shadow-sm border border-zinc-200 h-40 w-full mb-4">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7509!2d77.636065!3d12.900951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14bdf1ab8f49%3A0x62e7a2618703d3fe!2sSairam%20Decorators!5e0!3m2!1sen!2sin!4v1705856000000!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                        <div className="space-y-4">
+                            <div>
+                                <span className="text-xs uppercase font-bold text-zinc-400 block mb-1">Phone</span>
+                                <div className="flex flex-col gap-1 text-sm font-medium text-zinc-500">
+                                    <a href="tel:+919902924666" className="hover:text-zinc-900 transition-colors">+91 99029 24666</a>
+                                    <a href="tel:+919341267500" className="hover:text-zinc-900 transition-colors">+91 93412 67500</a>
+                                    <a href="tel:+918040931808" className="hover:text-zinc-900 transition-colors">+91 80 40931808</a>
+                                </div>
+                            </div>
+                            <div>
+                                <span className="text-xs uppercase font-bold text-zinc-400 block mb-1">Email</span>
+                                <a href="mailto:info@sairamdecorators.com" className="hover:text-zinc-900 transition-colors text-sm font-medium text-zinc-500">info@sairamdecorators.com</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-zinc-200 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-400">
+                <div className="pt-6 border-t border-zinc-200 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] uppercase tracking-wider text-zinc-400">
                     <p>© {new Date().getFullYear()} Sai Ram Decorators. All rights reserved.</p>
-                    <div className="flex gap-8">
-                        <Link href="/privacy" className="hover:text-zinc-900 transition-colors">Privacy Policy</Link>
-                        <Link href="/terms" className="hover:text-zinc-900 transition-colors">Terms of Service</Link>
-                    </div>
                 </div>
             </Container>
-        </footer>
+        </footer >
     )
 }

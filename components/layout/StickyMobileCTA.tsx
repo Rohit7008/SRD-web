@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Home, LayoutGrid, FolderHeart, Phone, MessageCircle, MoreHorizontal } from "lucide-react"
+import { Home, LayoutGrid, FolderHeart, Phone, MessageCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const NAV_ITEMS = [
@@ -43,7 +43,7 @@ export function StickyMobileCTA() {
 
                 {/* Floating Action-like Button for WhatsApp */}
                 <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/919341267500?text=Hi%2C%20can%20I%20get%20more%20information%3F"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col items-center justify-center flex-1 py-2.5 px-1 rounded-2xl text-green-400 hover:text-green-300 transition-all active:scale-90"

@@ -3,6 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 import { Menu, Phone, X, Instagram, Facebook, Mail, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
@@ -12,16 +13,21 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const NAV_ITEMS = [
     { label: "Home", href: "/" },
-    { label: "Services", href: "/services" },
+    { label: "UPVC Products", href: "/products/upvc" },
+    { label: "Aluminium Products", href: "/products/aluminium" },
+    { label: "About Us", href: "/about" },
     { label: "Projects", href: "/projects" },
-    { label: "Why Us", href: "/why-us" },
-    { label: "Contact", href: "/contact" },
 ]
 
 export function Header() {
+    const pathname = usePathname()
     const [isScrolled, setIsScrolled] = React.useState(false)
     const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
     const [modalOpen, setModalOpen] = React.useState(false)
+
+    const isHome = pathname === "/"
+    // Header should be transparent only on Home page and when not scrolled
+    const isTransparent = isHome && !isScrolled
 
     React.useEffect(() => {
         const handleScroll = () => {
@@ -45,7 +51,7 @@ export function Header() {
             <header
                 className={cn(
                     "fixed top-0 left-0 right-0 z-[60] transition-all duration-500",
-                    isScrolled
+                    !isTransparent
                         ? "bg-white/95 backdrop-blur-md border-b border-zinc-100 py-3 shadow-sm"
                         : "bg-transparent py-5"
                 )}
@@ -65,7 +71,7 @@ export function Header() {
                             </div>
                             <span className={cn(
                                 "font-heading font-bold text-lg md:text-xl tracking-tight transition-colors whitespace-nowrap",
-                                isScrolled ? "text-zinc-900" : "text-white"
+                                !isTransparent ? "text-zinc-900" : "text-white"
                             )}>
                                 Sai Ram Decorators
                             </span>
@@ -79,7 +85,7 @@ export function Header() {
                                     href={item.href}
                                     className={cn(
                                         "text-sm font-semibold transition-all hover:-translate-y-0.5",
-                                        isScrolled ? "text-zinc-600 hover:text-zinc-900" : "text-white/80 hover:text-white"
+                                        !isTransparent ? "text-zinc-600 hover:text-zinc-900" : "text-white/80 hover:text-white"
                                     )}
                                 >
                                     {item.label}
@@ -91,21 +97,12 @@ export function Header() {
                         <div className="hidden lg:flex items-center gap-8">
                             <div className={cn(
                                 "flex items-center gap-2 font-medium transition-colors",
-                                isScrolled ? "text-zinc-900" : "text-white"
+                                !isTransparent ? "text-zinc-900" : "text-white"
                             )}>
                                 <Phone className="w-4 h-4" />
-                                <span className="text-sm font-semibold tracking-tight">+91 98765 43210</span>
+                                <span className="text-sm font-semibold tracking-tight">+91 93412 67500</span>
                             </div>
-                            <Button
-                                size="sm"
-                                onClick={() => setModalOpen(true)}
-                                className={cn(
-                                    "rounded-full px-8 h-11 transition-all hover:scale-105 active:scale-95 font-bold",
-                                    isScrolled ? "bg-zinc-900 text-white" : "bg-white text-zinc-900 hover:bg-white/90"
-                                )}
-                            >
-                                Get Quote
-                            </Button>
+
                         </div>
 
                         {/* Mobile Toggle */}
@@ -165,11 +162,11 @@ export function Header() {
                             >
                                 <div className="space-y-4">
                                     <p className="text-zinc-400 uppercase tracking-widest text-xs font-bold">Get in Touch</p>
-                                    <a href="tel:+919876543210" className="flex items-center gap-4 text-zinc-900 group">
+                                    <a href="tel:+919902924666" className="flex items-center gap-4 text-zinc-900 group">
                                         <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
                                             <Phone className="w-5 h-5" />
                                         </div>
-                                        <span className="text-lg font-semibold">+91 98765 43210</span>
+                                        <span className="text-lg font-semibold">+91 93412 67500</span>
                                     </a>
                                     <a href="mailto:info@sairamdecorators.com" className="flex items-center gap-4 text-zinc-900 group">
                                         <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">

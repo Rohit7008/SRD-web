@@ -5,8 +5,8 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function ContactPage() {
     return (
-        <div className="pt-32">
-            <Section className="bg-zinc-50 border-b border-zinc-200">
+        <div className="pt-16 pb-12">
+            <Section className="bg-zinc-50">
                 <Container>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
                         <div>
@@ -26,7 +26,11 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="text-lg font-bold text-zinc-900 mb-1">Call Us</h3>
                                         <p className="text-zinc-500 mb-1">Mon-Sat from 9am to 7pm</p>
-                                        <a href="tel:+919876543210" className="text-blue-600 font-medium hover:underline text-lg">+91 98765 43210</a>
+                                        <div className="flex flex-col">
+                                            <a href="tel:+919902924666" className="text-blue-600 font-medium hover:underline text-lg">+91 99029 24666</a>
+                                            <a href="tel:+919341267500" className="text-blue-600 font-medium hover:underline text-lg">+91 9341267500</a>
+                                            <a href="tel:+918040931808" className="text-blue-600 font-medium hover:underline text-lg">+91 80 40931808</a>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -37,7 +41,7 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="text-lg font-bold text-zinc-900 mb-1">Email</h3>
                                         <p className="text-zinc-500 mb-1">For quotes and general inquiries</p>
-                                        <a href="mailto:hello@sairamdecorators.com" className="text-blue-600 font-medium hover:underline text-lg">hello@sairamdecorators.com</a>
+                                        <a href="mailto:info@sairamdecorators.com" className="text-blue-600 font-medium hover:underline text-lg">info@sairamdecorators.com</a>
                                     </div>
                                 </div>
 
@@ -45,12 +49,19 @@ export default function ContactPage() {
                                     <div className="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
                                         <MapPin className="w-5 h-5" />
                                     </div>
-                                    <div>
-                                        <h3 className="text-lg font-bold text-zinc-900 mb-1">Office / Experience Center</h3>
-                                        <address className="text-zinc-500 not-italic leading-relaxed">
-                                            123, Tech Park Road, Whitefield,<br />
-                                            Bengaluru, Karnataka 560066
-                                        </address>
+                                    <div className="w-full">
+                                        <h3 className="text-lg font-bold text-zinc-900 mb-3">Office / Experience Center</h3>
+                                        <div className="w-full h-[200px] bg-zinc-100 rounded-2xl overflow-hidden shadow-sm border border-zinc-200">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7509!2d77.636065!3d12.900951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14bdf1ab8f49%3A0x62e7a2618703d3fe!2sSairam%20Decorators!5e0!3m2!1sen!2sin!4v1705856000000!5m2!1sen!2sin"
+                                                width="100%"
+                                                height="100%"
+                                                style={{ border: 0 }}
+                                                allowFullScreen
+                                                loading="lazy"
+                                                referrerPolicy="no-referrer-when-downgrade"
+                                            ></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -59,15 +70,6 @@ export default function ContactPage() {
                         <div className="bg-white p-6 rounded-3xl shadow-xl border border-zinc-100">
                             <LeadForm />
                         </div>
-                    </div>
-                </Container>
-            </Section>
-
-            <Section>
-                <Container>
-                    {/* Map Placeholder */}
-                    <div className="w-full h-[400px] bg-zinc-200 rounded-3xl flex items-center justify-center text-zinc-500 font-medium text-lg">
-                        Google Maps Embed
                     </div>
                 </Container>
             </Section>

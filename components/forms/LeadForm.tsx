@@ -30,10 +30,25 @@ export function LeadForm() {
         e.preventDefault()
         setLoading(true)
 
-        // WhatsApp Integration
-        const message = `*New Site Visit Request*\n\n*Name:* ${formData.name}\n*Phone:* ${formData.phone}\n*Service:* ${formData.service}\n*Location:* ${formData.location}`
+        try {
+            // 1. Send data to Google Sheets via our API
+            await fetch('/api/leads', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+        } catch (error) {
+            console.error("Failed to save lead:", error);
+            // We continue to WhatsApp even if saving fails, to not lose the lead
+        }
+
+        // 2. Prepare WhatsApp Message
+        // Current Flow: WhatsApp opens immediately after data save attempt
+        const message = `Hi, I would like to book a free site visit for *${formData.service}*.\n\nMy details:\nName: ${formData.name}\nPhone: ${formData.phone}\nLocation: ${formData.location}\n\nPlease get back to me.`
         const encodedMessage = encodeURIComponent(message)
-        const whatsappUrl = `https://wa.me/919876543210?text=${encodedMessage}`
+        const whatsappUrl = `https://wa.me/919341267500?text=${encodedMessage}`
 
         // Redirect to WhatsApp
         window.open(whatsappUrl, '_blank')
@@ -51,7 +66,7 @@ export function LeadForm() {
                     </div>
                     <h3 className="text-xl font-bold font-heading text-zinc-900 mb-2">Request Received!</h3>
                     <p className="text-zinc-600 mb-6">
-                        Our expert will call you shortly to schedule your free site visit.
+                        Redirecting you to WhatsApp to finalize your request...
                     </p>
                     <Button
                         variant="outline"
