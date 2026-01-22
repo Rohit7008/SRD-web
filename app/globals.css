@@ -192,8 +192,21 @@
     @apply border-border outline-ring/50;
   }
 
+  html {
+    /* Smooth scrolling for all browsers */
+    scroll-behavior: smooth;
+    /* Prevent overscroll bounce on mobile */
+    overscroll-behavior-y: none;
+  }
+
   body {
     @apply bg-background text-foreground font-sans;
+    /* Enable momentum scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
+    /* Prevent overscroll bounce */
+    overscroll-behavior-y: none;
+    /* Improve touch interactions */
+    touch-action: pan-y;
   }
 
   h1,

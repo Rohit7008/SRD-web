@@ -3,7 +3,6 @@ import Script from "next/script";
 import { Playfair_Display, Manrope } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { StickyMobileCTA } from "@/components/layout/StickyMobileCTA";
 import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import "./globals.css";
 
@@ -92,7 +91,6 @@ export default function RootLayout({
           </main>
           <Footer />
           <WhatsAppFloatingButton />
-          <StickyMobileCTA />
         </div>
         <Script
           id="schema-org-local-business"

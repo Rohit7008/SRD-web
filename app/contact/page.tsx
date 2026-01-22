@@ -11,16 +11,16 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
                         <div>
                             <span className="text-blue-600 font-semibold tracking-wide uppercase text-sm mb-4 block">Get in Touch</span>
-                            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-zinc-900">
+                            <h1 className="text-2xl md:text-5xl font-heading font-bold mb-6 text-zinc-900 leading-tight">
                                 Let&apos;s discuss your dream project.
                             </h1>
-                            <p className="text-xl text-zinc-500 mb-12 leading-relaxed">
+                            <p className="text-base md:text-xl text-zinc-500 mb-12 leading-relaxed">
                                 Whether you have a specific requirement or just need advice on glazing and fenestration, our team is here to help.
                             </p>
 
                             <div className="space-y-8">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
+                                    <div className="w-14 h-14 md:w-12 md:h-12 bg-zinc-900 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
                                         <Phone className="w-5 h-5" />
                                     </div>
                                     <div>
@@ -35,7 +35,7 @@ export default function ContactPage() {
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
+                                    <div className="w-14 h-14 md:w-12 md:h-12 bg-zinc-900 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
                                         <Mail className="w-5 h-5" />
                                     </div>
                                     <div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
+                                    <div className="w-14 h-14 md:w-12 md:h-12 bg-zinc-900 rounded-xl flex items-center justify-center flex-shrink-0 text-white">
                                         <MapPin className="w-5 h-5" />
                                     </div>
                                     <div className="w-full">

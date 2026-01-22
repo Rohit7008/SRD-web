@@ -33,10 +33,10 @@ export default function BlogIndexPage() {
                 <Container className="relative z-10">
                     <div className="max-w-3xl mx-auto text-center space-y-6">
                         <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Expert Insights</span>
-                        <h1 className="text-4xl md:text-6xl font-heading font-medium text-zinc-900 tracking-tight leading-tight">
+                        <h1 className="text-3xl md:text-6xl font-heading font-medium text-zinc-900 tracking-tight leading-tight">
                             The <span className="italic font-serif">Education</span> Hub
                         </h1>
-                        <p className="text-lg md:text-xl text-zinc-600 font-light leading-relaxed">
+                        <p className="text-base md:text-xl text-zinc-600 font-light leading-relaxed">
                             Honest answers to your questions about windows, doors, and home renovation.
                             Written by experts, not salespeople.
                         </p>
@@ -48,11 +48,11 @@ export default function BlogIndexPage() {
             <section className="py-12 md:py-24">
                 <Container>
                     {/* Categories (Visual only for now) */}
-                    <div className="flex flex-wrap gap-2 justify-center mb-16">
+                    <div className="flex flex-wrap gap-3 justify-center mb-16">
                         {categories.map((cat) => (
                             <span
                                 key={cat}
-                                className="px-4 py-2 rounded-full text-sm font-medium bg-zinc-100 text-zinc-600 cursor-pointer hover:bg-zinc-900 hover:text-white transition-colors"
+                                className="px-5 py-2.5 min-h-[44px] flex items-center rounded-full text-sm font-medium bg-zinc-100 text-zinc-600 cursor-pointer hover:bg-zinc-900 hover:text-white transition-colors"
                             >
                                 {cat}
                             </span>

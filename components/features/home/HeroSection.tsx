@@ -42,13 +42,13 @@ export function HeroSection() {
             <Container className="relative z-10 text-center text-white h-full flex flex-col items-center justify-center py-24 px-6">
                 <MotionContainer delay={0.2} className="space-y-8 max-w-5xl mx-auto flex flex-col items-center">
                     <div className="space-y-6">
-                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-medium tracking-tight leading-[1.1]">
+                        <h1 className="text-3xl md:text-5xl lg:text-7xl font-heading font-medium tracking-tight leading-[1.2]">
                             Premium <span className="text-blue-400">UPVC & Aluminium</span> <br className="hidden md:block" />
                             <span className="italic font-serif text-white/90">Windows & Doors</span>
-                            <span className="block mt-2 text-2xl md:text-4xl font-light text-zinc-300">Manufacturers in Bangalore</span>
+                            <span className="block mt-2 text-xl md:text-4xl font-light text-zinc-300">Manufacturers in Bangalore</span>
                         </h1>
 
-                        <p className="max-w-lg mx-auto text-base md:text-lg text-zinc-200 font-light leading-relaxed px-4 md:px-0 opacity-90">
+                        <p className="max-w-lg mx-auto text-sm md:text-lg text-zinc-200 font-light leading-relaxed px-4 md:px-0 opacity-90">
                             Direct manufacturers of soundproof UPVC windows and slim-profile aluminium systems.
                         </p>
                     </div>

@@ -20,7 +20,7 @@ export function BlogCard({ post, className }: BlogCardProps) {
                 className
             )}
         >
-            <div className="relative h-64 w-full overflow-hidden">
+            <div className="relative h-48 md:h-64 w-full overflow-hidden">
                 <Image
                     src={post.coverImage}
                     alt={post.title}
@@ -34,7 +34,7 @@ export function BlogCard({ post, className }: BlogCardProps) {
                 </div>
             </div>
 
-            <div className="flex flex-col flex-1 p-6 md:p-8">
+            <div className="flex flex-col flex-1 p-5 md:p-8">
                 <div className="flex items-center gap-4 text-xs font-medium text-zinc-400 mb-4">
                     <div className="flex items-center gap-1.5">
                         <Calendar className="w-3.5 h-3.5" />
@@ -46,7 +46,7 @@ export function BlogCard({ post, className }: BlogCardProps) {
                     </div>
                 </div>
 
-                <h3 className="text-xl md:text-2xl font-bold text-zinc-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors line-clamp-2">
+                <h3 className="text-lg md:text-2xl font-bold text-zinc-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors line-clamp-2">
                     {post.title}
                 </h3>
 

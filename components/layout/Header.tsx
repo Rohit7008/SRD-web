@@ -13,7 +13,6 @@ import { ContactTrigger } from "@/components/features/contact/ContactTrigger"
 import { motion, AnimatePresence } from "framer-motion"
 
 const NAV_ITEMS = [
-    { label: "Home", href: "/" },
     { label: "UPVC Products", href: "/products/upvc" },
     { label: "Aluminium Products", href: "/products/aluminium" },
     { label: "About Us", href: "/about" },
@@ -109,13 +108,13 @@ export function Header() {
                         {/* Mobile Toggle */}
                         <button
                             className={cn(
-                                "lg:hidden p-2.5 rounded-xl transition-all active:scale-90 z-50",
+                                "lg:hidden p-3 rounded-xl transition-all active:scale-90 z-50 min-w-[44px] min-h-[44px] flex items-center justify-center",
                                 mobileMenuOpen
-                                    ? "text-zinc-900 bg-zinc-100"
-                                    : (isScrolled ? "text-zinc-900 bg-zinc-100" : "text-white bg-white/10 backdrop-blur-md")
+                                    ? "text-zinc-900 bg-zinc-100 shadow-md"
+                                    : (isScrolled ? "text-zinc-900 bg-zinc-100 shadow-sm" : "text-white bg-white/10 backdrop-blur-md shadow-lg")
                             )}
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            aria-label="Toggle Menu"
+                            aria-label={mobileMenuOpen ? "Close Menu" : "Open Menu"}
                         >
                             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                         </button>
@@ -126,87 +125,113 @@ export function Header() {
             {/* Mobile Menu Drawer */}
             <AnimatePresence>
                 {mobileMenuOpen && (
-                    <motion.div
-                        initial={{ opacity: 0, x: "100%" }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: "100%" }}
-                        transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                        className="fixed inset-0 z-[70] bg-white lg:hidden flex flex-col"
-                    >
-                        <div className="flex-1 overflow-y-auto px-6 pt-24 pb-12 space-y-12">
-                            {/* Navigation Links */}
-                            <nav className="flex flex-col space-y-6">
-                                {NAV_ITEMS.map((item, index) => (
-                                    <motion.div
-                                        key={item.href}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: index * 0.1 }}
-                                    >
-                                        <Link
-                                            href={item.href}
-                                            className="text-4xl font-heading font-bold text-zinc-900 hover:text-zinc-500 transition-colors"
-                                            onClick={() => setMobileMenuOpen(false)}
+                    <>
+                        {/* Backdrop Overlay */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="fixed inset-0 z-[65] bg-black/50 backdrop-blur-sm lg:hidden"
+                            onClick={() => setMobileMenuOpen(false)}
+                        />
+
+                        {/* Menu Drawer */}
+                        <motion.div
+                            initial={{ opacity: 0, x: "100%" }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: "100%" }}
+                            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                            className="fixed inset-0 z-[70] bg-white lg:hidden flex flex-col"
+                        >
+                            {/* Fixed Header with Close Button */}
+                            <div className="flex-shrink-0 flex items-center justify-between px-6 py-4 border-b border-zinc-100 bg-white">
+                                <span className="text-lg font-heading font-bold text-zinc-900">Menu</span>
+                                <button
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className="p-2.5 rounded-xl bg-zinc-100 text-zinc-900 hover:bg-zinc-900 hover:text-white transition-all active:scale-90"
+                                    aria-label="Close Menu"
+                                >
+                                    <X className="w-6 h-6" />
+                                </button>
+                            </div>
+
+                            {/* Scrollable Content */}
+                            <div className="flex-1 overflow-y-auto overscroll-contain px-6 pt-8 pb-6 space-y-12" style={{ WebkitOverflowScrolling: 'touch' }}>
+                                {/* Navigation Links */}
+                                <nav className="flex flex-col space-y-6">
+                                    {NAV_ITEMS.map((item, index) => (
+                                        <motion.div
+                                            key={item.href}
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ delay: index * 0.1 }}
                                         >
-                                            {item.label}
-                                        </Link>
-                                    </motion.div>
-                                ))}
-                            </nav>
+                                            <Link
+                                                href={item.href}
+                                                className="block text-3xl md:text-4xl font-heading font-bold text-zinc-900 hover:text-zinc-500 transition-colors py-2"
+                                                onClick={() => setMobileMenuOpen(false)}
+                                            >
+                                                {item.label}
+                                            </Link>
+                                        </motion.div>
+                                    ))}
+                                </nav>
 
-                            {/* Contact Info */}
-                            <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 0.5 }}
-                                className="space-y-6 pt-12 border-t border-zinc-100"
-                            >
-                                <div className="space-y-4">
-                                    <p className="text-zinc-400 uppercase tracking-widest text-xs font-bold">Get in Touch</p>
-                                    <ContactTrigger className="flex items-center gap-4 text-zinc-900 group">
-                                        <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
-                                            <Phone className="w-5 h-5" />
+                                {/* Contact Info */}
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ delay: 0.5 }}
+                                    className="space-y-6 pt-8 border-t border-zinc-100"
+                                >
+                                    <div className="space-y-4">
+                                        <p className="text-zinc-400 uppercase tracking-widest text-xs font-bold">Get in Touch</p>
+                                        <ContactTrigger className="flex items-center gap-4 text-zinc-900 group">
+                                            <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
+                                                <Phone className="w-5 h-5" />
+                                            </div>
+                                            <span className="text-lg font-semibold">+91 93412 67500</span>
+                                        </ContactTrigger>
+                                        <a href="mailto:info@sairamdecorators.com" className="flex items-center gap-4 text-zinc-900 group">
+                                            <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
+                                                <Mail className="w-5 h-5" />
+                                            </div>
+                                            <span className="text-lg font-semibold">info@sairamdecorators.com</span>
+                                        </a>
+                                        <div className="flex items-center gap-4 text-zinc-900">
+                                            <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center">
+                                                <MapPin className="w-5 h-5" />
+                                            </div>
+                                            <span className="text-lg font-semibold">HSR Layout, Bengaluru</span>
                                         </div>
-                                        <span className="text-lg font-semibold">+91 93412 67500</span>
-                                    </ContactTrigger>
-                                    <a href="mailto:info@sairamdecorators.com" className="flex items-center gap-4 text-zinc-900 group">
-                                        <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
-                                            <Mail className="w-5 h-5" />
-                                        </div>
-                                        <span className="text-lg font-semibold">info@sairamdecorators.com</span>
-                                    </a>
-                                    <div className="flex items-center gap-4 text-zinc-900">
-                                        <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center">
-                                            <MapPin className="w-5 h-5" />
-                                        </div>
-                                        <span className="text-lg font-semibold">HSR Layout, Bengaluru</span>
                                     </div>
-                                </div>
 
-                                <div className="flex gap-4">
-                                    <Link href="#" className="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center hover:bg-zinc-900 hover:border-zinc-900 hover:text-white transition-all">
-                                        <Instagram className="w-5 h-5" />
-                                    </Link>
-                                    <Link href="#" className="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center hover:bg-zinc-900 hover:border-zinc-900 hover:text-white transition-all">
-                                        <Facebook className="w-5 h-5" />
-                                    </Link>
-                                </div>
-                            </motion.div>
-                        </div>
+                                    <div className="flex gap-4 pb-4">
+                                        <Link href="#" className="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center hover:bg-zinc-900 hover:border-zinc-900 hover:text-white transition-all">
+                                            <Instagram className="w-5 h-5" />
+                                        </Link>
+                                        <Link href="#" className="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center hover:bg-zinc-900 hover:border-zinc-900 hover:text-white transition-all">
+                                            <Facebook className="w-5 h-5" />
+                                        </Link>
+                                    </div>
+                                </motion.div>
+                            </div>
 
-                        {/* Mobile Menu Footer */}
-                        <div className="p-6 bg-zinc-50 border-t border-zinc-100">
-                            <Button
-                                className="w-full h-14 rounded-2xl text-lg font-bold shadow-lg"
-                                onClick={() => {
-                                    setMobileMenuOpen(false)
-                                    setModalOpen(true)
-                                }}
-                            >
-                                Get a Free Quote
-                            </Button>
-                        </div>
-                    </motion.div>
+                            {/* Fixed Footer with CTA */}
+                            <div className="flex-shrink-0 p-6 bg-zinc-50 border-t border-zinc-100">
+                                <Button
+                                    className="w-full h-14 rounded-2xl text-lg font-bold shadow-lg"
+                                    onClick={() => {
+                                        setMobileMenuOpen(false)
+                                        setModalOpen(true)
+                                    }}
+                                >
+                                    Get a Free Quote
+                                </Button>
+                            </div>
+                        </motion.div>
+                    </>
                 )}
             </AnimatePresence>
 

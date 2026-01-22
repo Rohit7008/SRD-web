@@ -13,17 +13,19 @@ export default function AboutPage() {
                     <div className="flex flex-col lg:flex-row gap-12 items-center mb-20">
                         <div className="flex-1 space-y-6">
                             <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-sm block">The Company</span>
-                            <h1 className="text-4xl md:text-5xl font-heading font-bold text-zinc-900 leading-tight">
+                            <h1 className="text-3xl md:text-5xl font-heading font-bold text-zinc-900 leading-tight">
                                 Sai Ram Decorators
                             </h1>
-                            <h2 className="text-xl md:text-2xl text-zinc-500 font-medium">
+                            <h2 className="text-lg md:text-2xl text-zinc-500 font-medium">
                                 Manufacturer of UPVC, Aluminium Windows, Doors & Partitions
                             </h2>
                             <div className="w-20 h-1 bg-blue-600 rounded-full" />
-                            <p className="text-lg text-zinc-600 leading-relaxed">
+
+                            <p className="text-base md:text-lg text-zinc-600 leading-relaxed">
                                 As an independently owned Manufacturer, we are able to choose the products we manufacture to best suit our customer requirements, and our own ethos.
                             </p>
-                            <p className="text-lg text-zinc-600 leading-relaxed">
+
+                            <p className="text-base md:text-lg text-zinc-600 leading-relaxed">
                                 Authentically re-create the classical style of traditional timber windows and doors with a modern, thermally-efficient, UPVC, Aluminium window and Door system exclusively by Sai Ram Decorators.
                             </p>
                         </div>
