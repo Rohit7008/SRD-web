@@ -13,9 +13,9 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
     upvc: {
         "sliding-windows": {
             id: "sliding-windows",
-            title: "UPVC Sliding Windows",
-            description: "Traditional style and contemporary performance.",
-            longDescription: "UPVC Sliding windows add a traditional style and contemporary performance to a new home. Sliding windows feature two sashes, with at least one sash sliding horizontally past another. They create a contemporary look while allowing in breezes from multiple directions.",
+            title: "UPVC Sliding Windows Bangalore",
+            description: "Traditional style and contemporary performance for Bangalore homes.",
+            longDescription: "Our UPVC Sliding Windows are designed to handle Bangalore's unique weather. They feature two sashes, with at least one sash sliding horizontally past another. They create a contemporary look while allowing in breezes from multiple directions—perfect for ventilating your home after a heavy rain.",
             features: ["Traditional Style", "Contemporary Performance", "Horizontal Sliding Sashes", "Multi-direction Ventilation"],
             image: "/images/upvc_sliding_window_1769009483560.png",
             category: "upvc"
@@ -23,7 +23,7 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
         "fixed-windows": {
             id: "fixed-windows",
             title: "UPVC Fixed Windows",
-            description: "Great way of bringing light and views into a space.",
+            description: "Great way of bringing light and views into a space. Affordable and energy efficient.",
             longDescription: "Fixed windows in UPVC frames are a great way of bringing light and views into a space, improve energy efficiency and are affordable. The basic function of a window is to admit daylight in acceptable and consistent quantities, while maintaining the ambient temperature inside the house.",
             features: ["Maximum Light", "Energy Efficient", "Affordable", "Temperature Maintenance"],
             image: "/images/upvc_fixed_window_view_1769016648166.png",
@@ -49,10 +49,10 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
         },
         "sliding-doors": {
             id: "sliding-doors",
-            title: "UPVC Sliding Doors",
-            description: "Classic good looks with a maximum glass area.",
-            longDescription: "Classic good looks with a maximum glass area which optimizes visibility, making it a perfect choice for conservatories, balconies, porches or extensions.",
-            features: ["Maximum Glass Area", "Optimized Visibility", "Classic Look"],
+            title: "UPVC Sliding Doors Bangalore",
+            description: "Space-saving sliding doors with maximum glass area.",
+            longDescription: "Maximize your view with our UPVC sliding doors, a popular choice for balconies and sit-outs in Bangalore apartments. They offer classic good looks with a maximum glass area which optimizes visibility, making it a perfect choice for conservatories, balconies, porches or extensions.",
+            features: ["Maximum Glass Area", "Optimized Visibility", "Classic Look", "Balcony Ready"],
             image: "/images/upvc_sliding_patio_door_1769017888626.png",
             category: "upvc"
         },
@@ -87,9 +87,9 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
     aluminium: {
         "sliding-windows": {
             id: "sliding-windows",
-            title: "Aluminium Sliding Windows",
+            title: "Aluminium Sliding Windows Bangalore",
             description: "Uniquely designed to carry a wide range of glass thickness.",
-            longDescription: "Aluminium Sliding Window that can be double glazed. It is uniquely designed to carry a wide range of glass thickness for sound reduction. Best suited for most exposed locations, offered window is intricately manufactured in conformance with the set industry terms using optimal quality aluminum and latest techniques.",
+            longDescription: "Our Aluminium Sliding Windows are a favorite in modern Bangalore architecture. They are uniquely designed to carry a wide range of glass thickness for sound reduction—essential for blocking out city traffic noise. Best suited for exposed locations.",
             features: ["Double Glazed Options", "Sound Reduction", "Exposed Locations", "Intricate Manufacture"],
             image: "/images/aluminium_sliding_window_modern_1769016564516.png",
             category: "aluminium"
@@ -100,7 +100,7 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
             description: "Admit daylight in acceptable and consistent quantities.",
             longDescription: "The basic function of a window is to admit daylight in acceptable and consistent quantities, while maintaining the ambient temperature inside the house",
             features: ["Daylight Maximization", "Consistent Quality", "Ambient Temperature Control"],
-            image: "/images/upvc_fixed_window_view_1769016648166.png", // Reusing fixed window
+            image: "/images/upvc_fixed_window_view_1769016648166.png",
             category: "aluminium"
         },
         "casement-windows": {
@@ -127,7 +127,7 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
             description: "Give you more glass and less frame.",
             longDescription: "Aluminium sliding doors give you more glass and less frame which results in more light being let through. The rooms in your property will seem bigger, brighter and warmer.",
             features: ["More Glass Less Frame", "Max Light", "Spacious Feel", "Warmer Rooms"],
-            image: "/images/aluminium_sliding_window_modern_1769016564516.png", // Reusing sliding window for now or need specific door image? Using window as it's very similar style in brochure or I can use upvc sliding door image substitute. Let's use window as it's high quality.
+            image: "/images/aluminium_sliding_window_modern_1769016564516.png",
             category: "aluminium"
         },
         "double-leaf-front-doors": {
@@ -141,9 +141,9 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
         },
         "partitions": {
             id: "partitions",
-            title: "Toughened Glass Partition",
+            title: "Toughened Glass Partition Bangalore",
             description: "Split up working spaces while utilizing light.",
-            longDescription: "Glass partitioning is often used in offices, to split up working spaces. However it can also be used in the home - in kitchen, bathroom, or study spaces - therefore utilizing the most space and light available.",
+            longDescription: "Glass partitioning is often used in Bangalore offices to split up working spaces without losing the sense of openness. However, it can also be used in the home - in kitchen, bathroom, or study spaces - therefore utilizing the most space and light available.",
             features: ["Space Division", "Light Maximization", "Office & Home Use"],
             image: "/images/toughened_glass_partition_1769016480903.png",
             category: "aluminium"

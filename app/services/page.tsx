@@ -11,7 +11,7 @@ export default function ServicesPage() {
                 <Container>
                     <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">Our Services</h1>
                     <p className="text-xl text-zinc-400 max-w-2xl leading-relaxed">
-                        From precision-engineered windows to complete interior transformations, explore our range of architectural solutions.
+                        From precision-engineered windows to advanced facade solutions, explore our range of architectural products.
                     </p>
                 </Container>
             </Section>
@@ -45,12 +45,7 @@ export default function ServicesPage() {
                             href="/services/doors"
                             specs={["High Security", "Multi-point Lock", "Custom Design"]}
                         />
-                        <ServiceCard
-                            title="Interior Execution"
-                            description="Turnkey interior solutions including false ceilings, wall paneling, modular kitchens and wardrobes."
-                            href="/services/interiors"
-                            specs={["Turnkey", "Modular", "False Ceiling"]}
-                        />
+
                         <ServiceCard
                             title="Facade Systems"
                             description="Advanced facade engineered solutions for modern architectural requirements."

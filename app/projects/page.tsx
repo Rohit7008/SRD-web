@@ -32,7 +32,7 @@ const PROJECTS = [
         image: "/images/french_door_garden_1769016541444.png",
     },
     {
-        title: "Tech Park Interiors",
+        title: "Tech Park Partitions",
         location: "Electronic City, Bangalore",
         description: "Acoustic glass and particle board partitions for meeting rooms.",
         image: "/images/glass_particle_board_partition_1769016502970.png",

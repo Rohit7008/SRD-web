@@ -9,6 +9,7 @@ import { Section } from "@/components/ui/section";
 import { ServiceCard } from "@/components/features/ServiceCard";
 import { HeroSection } from "@/components/features/home/HeroSection";
 import { MotionContainer } from "@/components/ui/motion-container";
+import { FAQSection } from "@/components/features/home/FAQSection";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -24,9 +25,9 @@ export default function Home() {
         <Container>
           <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
             <MotionContainer className="max-w-2xl">
-              <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-sm mb-3 block">Our Products</span>
+              <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-sm mb-3 block">Our Manufacturing Range</span>
               <h2 className="text-4xl md:text-5xl font-heading font-medium text-zinc-900 mb-4 tracking-tight leading-tight">
-                UPVC <span className="italic font-serif">&amp;</span> Aluminium <span className="italic font-serif">Systems</span>
+                Premium <span className="italic font-serif">UPVC</span> & Aluminium <span className="italic font-serif">Systems</span>
               </h2>
               <p className="text-zinc-500 text-lg leading-relaxed max-w-xl">
                 We manufacture high-quality, eco-friendly, and precise window and door systems tailored to your needs.
@@ -193,21 +194,21 @@ export default function Home() {
 
             <div className="order-1 lg:order-2 space-y-8">
               <div className="space-y-4">
-                <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-sm block">The Sai Ram Difference</span>
+                <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-sm block">The Factory Direct Advantage</span>
                 <h2 className="text-4xl md:text-5xl font-heading font-medium text-zinc-900 tracking-tight leading-tight">
-                  Authentic Style, <span className="italic font-serif">Modern Performance</span>
+                  Premium Quality, <span className="italic font-serif">Honest Pricing</span>
                 </h2>
                 <p className="text-zinc-500 text-lg leading-relaxed">
-                  As an independently owned company, we choose the products we manufacture to best suit our customer requirements. Our products are carved out from the finest quality raw material and tested to industry standards.
+                  We manufacture everything in-house at our facility in Bommanahalli. This means you get custom sizes, strict quality control, and better prices by cutting out the dealer margin.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 gap-4">
                 {[
-                  { title: "Precise Designs", description: "Carved from finest quality raw materials." },
-                  { title: "Eco-Friendly", description: "Nature-friendly materials and manufacturing." },
-                  { title: "Superior Strength", description: "Tested and checked as per industry standards." },
-                  { title: "Budget Friendly", description: "Quality within the budge, helping you make the right decisions." }
+                  { title: "No Middlemen Markup", description: "Save 20-30% by buying directly from the manufacturer." },
+                  { title: "German Precision Machinery", description: "Automated fabrication for perfect 90-degree joints." },
+                  { title: "10-Year Warranty", description: "Direct manufacturer support without third-party hassles." },
+                  { title: "15-Day Delivery", description: "Controlled timelines ensuring on-time project completion." }
                 ].map((item, i) => (
                   <motion.div
                     key={i}
@@ -229,6 +230,9 @@ export default function Home() {
           </div>
         </Container>
       </Section>
+
+
+      <FAQSection />
 
       {/* CTA Section */}
       <section className="py-24 md:py-40 relative overflow-hidden">

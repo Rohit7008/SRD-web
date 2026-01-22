@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
 import { LeadFormModal } from "@/components/forms/LeadFormModal"
 import { cn } from "@/lib/utils"
+import { ContactTrigger } from "@/components/features/contact/ContactTrigger"
 import { motion, AnimatePresence } from "framer-motion"
 
 const NAV_ITEMS = [
@@ -95,13 +96,13 @@ export function Header() {
 
                         {/* Actions */}
                         <div className="hidden lg:flex items-center gap-8">
-                            <div className={cn(
-                                "flex items-center gap-2 font-medium transition-colors",
+                            <ContactTrigger className={cn(
+                                "flex items-center gap-2 font-medium transition-colors cursor-pointer",
                                 !isTransparent ? "text-zinc-900" : "text-white"
                             )}>
                                 <Phone className="w-4 h-4" />
                                 <span className="text-sm font-semibold tracking-tight">+91 93412 67500</span>
-                            </div>
+                            </ContactTrigger>
 
                         </div>
 
@@ -162,12 +163,12 @@ export function Header() {
                             >
                                 <div className="space-y-4">
                                     <p className="text-zinc-400 uppercase tracking-widest text-xs font-bold">Get in Touch</p>
-                                    <a href="tel:+919902924666" className="flex items-center gap-4 text-zinc-900 group">
+                                    <ContactTrigger className="flex items-center gap-4 text-zinc-900 group">
                                         <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
                                             <Phone className="w-5 h-5" />
                                         </div>
                                         <span className="text-lg font-semibold">+91 93412 67500</span>
-                                    </a>
+                                    </ContactTrigger>
                                     <a href="mailto:info@sairamdecorators.com" className="flex items-center gap-4 text-zinc-900 group">
                                         <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
                                             <Mail className="w-5 h-5" />

@@ -2,7 +2,8 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function AboutPage() {
     return (
@@ -20,7 +21,7 @@ export default function AboutPage() {
                             </h2>
                             <div className="w-20 h-1 bg-blue-600 rounded-full" />
                             <p className="text-lg text-zinc-600 leading-relaxed">
-                                As an independently owned Company, we are able to choose the products we manufacture to best suit our customer requirements, and our own ethos.
+                                As an independently owned Manufacturer, we are able to choose the products we manufacture to best suit our customer requirements, and our own ethos.
                             </p>
                             <p className="text-lg text-zinc-600 leading-relaxed">
                                 Authentically re-create the classical style of traditional timber windows and doors with a modern, thermally-efficient, UPVC, Aluminium window and Door system exclusively by Sai Ram Decorators.
@@ -51,13 +52,21 @@ export default function AboutPage() {
                                 ))}
                             </ul>
                         </div>
-                        <div className="bg-zinc-50 p-8 rounded-3xl border border-zinc-100">
-                            <h3 className="text-2xl font-bold text-zinc-900 mb-4">Our Vision</h3>
-                            <p className="text-zinc-600 leading-relaxed">
-                                This brochure will help you make the right decisions to suit your needs and your budget. With so many potential options, we guide you through finding the perfect architectural solution for your space.
-                            </p>
+                        <div className="bg-zinc-50 p-8 rounded-3xl border border-zinc-100 flex flex-col justify-between">
+                            <div>
+                                <h3 className="text-2xl font-bold text-zinc-900 mb-4">Our Vision</h3>
+                                <p className="text-zinc-600 leading-relaxed mb-8">
+                                    This brochure will help you make the right decisions to suit your needs and your budget. With so many potential options, we guide you through finding the perfect architectural solution for your space.
+                                </p>
+                                <a href="/Sai Ram Decorator Brochure.pdf" download="Sai_Ram_Decorator_Brochure.pdf" target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <Button className="w-full gap-2 shadow-lg hover:shadow-xl transition-all h-12 text-lg" size="lg">
+                                        <Download className="w-5 h-5" />
+                                        Download Brochure
+                                    </Button>
+                                </a>
+                            </div>
                             <div className="mt-8 p-6 bg-white rounded-2xl shadow-sm border border-zinc-100">
-                                <p className="italic text-zinc-500 text-lg text-center">
+                                <p className="italic text-zinc-500 text-lg text-center font-medium">
                                     &quot;Quality within the Budget...&quot;
                                 </p>
                             </div>

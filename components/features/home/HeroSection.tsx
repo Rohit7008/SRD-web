@@ -42,21 +42,14 @@ export function HeroSection() {
             <Container className="relative z-10 text-center text-white h-full flex flex-col items-center justify-center py-24 px-6">
                 <MotionContainer delay={0.2} className="space-y-8 max-w-5xl mx-auto flex flex-col items-center">
                     <div className="space-y-6">
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[10px] md:text-xs font-semibold uppercase tracking-widest text-zinc-100 mb-2"
-                        >
-                            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-                            Premium UPVC & Aluminium Manufacturers
-                        </motion.div>
-
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-medium tracking-tight whitespace-nowrap">
-                            Quality within <span className="italic font-serif text-white/90">the Budget...</span>
+                        <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-medium tracking-tight leading-[1.1]">
+                            Premium <span className="text-blue-400">UPVC & Aluminium</span> <br className="hidden md:block" />
+                            <span className="italic font-serif text-white/90">Windows & Doors</span>
+                            <span className="block mt-2 text-2xl md:text-4xl font-light text-zinc-300">Manufacturers in Bangalore</span>
                         </h1>
 
                         <p className="max-w-lg mx-auto text-base md:text-lg text-zinc-200 font-light leading-relaxed px-4 md:px-0 opacity-90">
-                            Authentically re-create the classical style of traditional timber windows with our modern, thermally-efficient UPVC and Aluminium systems.
+                            Direct manufacturers of soundproof UPVC windows and slim-profile aluminium systems.
                         </p>
                     </div>
 

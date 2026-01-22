@@ -15,7 +15,7 @@ export default function ContactPage() {
                                 Let&apos;s discuss your dream project.
                             </h1>
                             <p className="text-xl text-zinc-500 mb-12 leading-relaxed">
-                                Whether you have a specific requirement or just need advice on glazing and interiors, our team is here to help.
+                                Whether you have a specific requirement or just need advice on glazing and fenestration, our team is here to help.
                             </p>
 
                             <div className="space-y-8">

@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
 import { Container } from "@/components/ui/container"
+import { ContactTrigger } from "@/components/features/contact/ContactTrigger"
 
 export function Footer() {
     return (
@@ -23,7 +24,7 @@ export function Footer() {
                             </span>
                         </div>
                         <p className="text-zinc-500 text-sm leading-relaxed mb-6 max-w-xs">
-                            Premium architectural solutions for modern homes and commercial spaces. Specializing in UPVC, Aluminium, and high-end decor.
+                            Premium architectural solutions for modern homes and commercial spaces. Specializing in UPVC, Aluminium, and Structural Glazing.
                         </p>
                         <div className="flex gap-3">
                             {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
@@ -48,6 +49,7 @@ export function Footer() {
                         <ul className="space-y-3 text-base text-zinc-500">
                             <li><Link href="/about" className="hover:text-zinc-900 transition-colors">About Us</Link></li>
                             <li><Link href="/projects" className="hover:text-zinc-900 transition-colors">Projects</Link></li>
+                            <li><Link href="/blog" className="hover:text-zinc-900 transition-colors">Blog</Link></li>
                             <li><Link href="/contact" className="hover:text-zinc-900 transition-colors">Contact</Link></li>
                         </ul>
                     </div>
@@ -70,7 +72,7 @@ export function Footer() {
                                 <span className="text-xs uppercase font-bold text-zinc-400 block mb-1">Phone</span>
                                 <div className="flex flex-col gap-1 text-sm font-medium text-zinc-500">
                                     <a href="tel:+919902924666" className="hover:text-zinc-900 transition-colors">+91 99029 24666</a>
-                                    <a href="tel:+919341267500" className="hover:text-zinc-900 transition-colors">+91 93412 67500</a>
+                                    <ContactTrigger className="hover:text-zinc-900 transition-colors cursor-pointer">+91 93412 67500</ContactTrigger>
                                     <a href="tel:+918040931808" className="hover:text-zinc-900 transition-colors">+91 80 40931808</a>
                                 </div>
                             </div>
