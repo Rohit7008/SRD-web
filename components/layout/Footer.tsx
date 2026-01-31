@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import { Facebook, Instagram } from "lucide-react"
 import { Container } from "@/components/ui/container"
 import { ContactTrigger } from "@/components/features/contact/ContactTrigger"
 
@@ -27,11 +27,12 @@ export function Footer() {
                             Premium architectural solutions for modern homes and commercial spaces. Specializing in UPVC, Aluminium, and Structural Glazing.
                         </p>
                         <div className="flex gap-3">
-                            {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-                                <Link key={i} href="#" className="w-9 h-9 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-zinc-900 hover:border-zinc-900 transition-all">
-                                    <Icon className="w-4 h-4" />
-                                </Link>
-                            ))}
+                            <Link href="https://www.facebook.com/share/1BeGKaE78B/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-blue-600 hover:border-blue-600 transition-all">
+                                <Facebook className="w-4 h-4" />
+                            </Link>
+                            <Link href="https://www.instagram.com/saira_m4616?utm_source=qr&igsh=eThwb2p0eHNxYTU=" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-pink-600 hover:border-pink-600 transition-all">
+                                <Instagram className="w-4 h-4" />
+                            </Link>
                         </div>
                     </div>
 
