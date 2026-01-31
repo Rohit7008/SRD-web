@@ -9,7 +9,7 @@ interface ContactTriggerProps {
     className?: string
 }
 
-export function ContactTrigger({ children, phoneNumber = "+919341267500", className }: ContactTriggerProps) {
+export function ContactTrigger({ children, phoneNumber = "+919019788904", className }: ContactTriggerProps) {
     const [isOpen, setIsOpen] = React.useState(false)
 
     return (

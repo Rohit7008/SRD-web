@@ -28,8 +28,8 @@ export default function ContactPage() {
                                         <p className="text-zinc-500 mb-1">Mon-Sat from 9am to 7pm</p>
                                         <div className="flex flex-col">
                                             <a href="tel:+919902924666" className="text-blue-600 font-medium hover:underline text-lg">+91 99029 24666</a>
-                                            <a href="tel:+919341267500" className="text-blue-600 font-medium hover:underline text-lg">+91 9341267500</a>
-                                            <a href="tel:+918040931808" className="text-blue-600 font-medium hover:underline text-lg">+91 80 40931808</a>
+                                            <a href="tel:+919019788904" className="text-blue-600 font-medium hover:underline text-lg">+91 90197 88904</a>
+                                            <a href="tel:+918049527803" className="text-blue-600 font-medium hover:underline text-lg">+91 80 49527803</a>
                                         </div>
                                     </div>
                                 </div>

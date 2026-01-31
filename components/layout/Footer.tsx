@@ -11,7 +11,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     <div>
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="relative w-8 h-8 flex-shrink-0">
+                            <div className="relative w-12 h-12 flex-shrink-0">
                                 <Image
                                     src="/images/logo.png"
                                     alt="Sai Ram Decorators Logo"
@@ -72,8 +72,8 @@ export function Footer() {
                                 <span className="text-xs uppercase font-bold text-zinc-400 block mb-1">Phone</span>
                                 <div className="flex flex-col gap-1 text-sm font-medium text-zinc-500">
                                     <a href="tel:+919902924666" className="hover:text-zinc-900 transition-colors">+91 99029 24666</a>
-                                    <ContactTrigger className="hover:text-zinc-900 transition-colors cursor-pointer">+91 93412 67500</ContactTrigger>
-                                    <a href="tel:+918040931808" className="hover:text-zinc-900 transition-colors">+91 80 40931808</a>
+                                    <ContactTrigger className="hover:text-zinc-900 transition-colors cursor-pointer" phoneNumber="+919019788904">+91 90197 88904</ContactTrigger>
+                                    <a href="tel:+918049527803" className="hover:text-zinc-900 transition-colors">+91 80 49527803</a>
                                 </div>
                             </div>
                             <div>

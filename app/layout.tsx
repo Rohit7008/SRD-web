@@ -116,7 +116,7 @@ export default function RootLayout({
                 "longitude": 77.636065
               },
               "url": "https://sairamdecorators.com",
-              "telephone": "+919902924666",
+              "telephone": "+919019788904",
               "priceRange": "₹₹",
               "openingHoursSpecification": [
                 {

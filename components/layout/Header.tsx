@@ -60,7 +60,7 @@ export function Header() {
                     <div className="flex items-center justify-between">
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-3 group relative z-50">
-                            <div className="relative w-9 h-9 md:w-10 md:h-10 flex-shrink-0">
+                            <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
                                 <Image
                                     src="/images/logo.png"
                                     alt="Sai Ram Decorators Logo"
@@ -100,7 +100,7 @@ export function Header() {
                                 !isTransparent ? "text-zinc-900" : "text-white"
                             )}>
                                 <Phone className="w-4 h-4" />
-                                <span className="text-sm font-semibold tracking-tight">+91 93412 67500</span>
+                                <span className="text-sm font-semibold tracking-tight">+91 90197 88904</span>
                             </ContactTrigger>
 
                         </div>
@@ -187,12 +187,24 @@ export function Header() {
                                 >
                                     <div className="space-y-4">
                                         <p className="text-zinc-400 uppercase tracking-widest text-xs font-bold">Get in Touch</p>
-                                        <ContactTrigger className="flex items-center gap-4 text-zinc-900 group">
+                                        <a href="tel:+919902924666" className="flex items-center gap-4 text-zinc-900 group">
                                             <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
                                                 <Phone className="w-5 h-5" />
                                             </div>
-                                            <span className="text-lg font-semibold">+91 93412 67500</span>
+                                            <span className="text-lg font-semibold">+91 99029 24666</span>
+                                        </a>
+                                        <ContactTrigger className="flex items-center gap-4 text-zinc-900 group" phoneNumber="+919019788904">
+                                            <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
+                                                <Phone className="w-5 h-5" />
+                                            </div>
+                                            <span className="text-lg font-semibold">+91 90197 88904</span>
                                         </ContactTrigger>
+                                        <a href="tel:+918049527803" className="flex items-center gap-4 text-zinc-900 group">
+                                            <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
+                                                <Phone className="w-5 h-5" />
+                                            </div>
+                                            <span className="text-lg font-semibold">+91 80 49527803</span>
+                                        </a>
                                         <a href="mailto:info@sairamdecorators.com" className="flex items-center gap-4 text-zinc-900 group">
                                             <div className="w-10 h-10 rounded-full bg-zinc-100 flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
                                                 <Mail className="w-5 h-5" />

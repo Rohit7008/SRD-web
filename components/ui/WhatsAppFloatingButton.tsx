@@ -3,7 +3,7 @@
 export function WhatsAppFloatingButton() {
     // Number: 91 93412 67500
     // Message: Hi, can i get more information
-    const phoneNumber = "919341267500"
+    const phoneNumber = "919019788904"
     const message = encodeURIComponent("Hi Sai ram decorators, can I get more information?")
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
 

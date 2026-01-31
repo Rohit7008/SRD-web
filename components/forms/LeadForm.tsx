@@ -93,12 +93,12 @@ export function LeadForm() {
             </div>
 
             <CardContent className="pt-8 px-6 pb-8">
-                <div className="mb-6">
+                <div className="mb-2">
                     <h3 className="text-2xl font-bold font-heading text-zinc-900">
-                        Get Free Site Visit
+                        Book Free Consultation
                     </h3>
                     <p className="text-zinc-500 text-sm mt-1">
-                        Expert consultation at your location in Bengaluru.
+                        Get expert advice and a quote for your project.
                     </p>
                 </div>
 
@@ -115,7 +115,7 @@ export function LeadForm() {
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium">What are you looking for?</label>
                                     <div className="grid grid-cols-1 gap-2">
-                                        {["UPVC Windows", "Aluminium Windows", "Interiors / Decor"].map((s) => (
+                                        {["UPVC Windows & Doors", "UPVC Partitions", "Aluminium Windows & Doors", "Frameless Glass Door", "Structural Glazing & ACP Cladding", "Shower Cubicles"].map((s) => (
                                             <button
                                                 key={s}
                                                 type="button"

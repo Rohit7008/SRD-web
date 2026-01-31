@@ -85,26 +85,20 @@ export default function Home() {
                   specs={["Max Visibility", "Space Saving"]}
                   image="/images/upvc_sliding_patio_door_1769017888626.png"
                 />
+
                 <ServiceCard
-                  title="French Doors"
-                  description="Charming addition to any home. Extensive opening allows unrestricted access."
-                  href="/products/upvc/french-doors"
-                  specs={["Garden Access", "Elegant"]}
-                  image="/images/french_door_garden_1769016541444.png"
+                  title="UPVC Foldable Sliding Windows"
+                  description="Innovative foldable mechanism for maximum openness."
+                  href="/products/upvc/foldable-sliding-windows"
+                  specs={["Max Openness", "Bi-Fold", "Seamless"]}
+                  image="/images/upvc_foldable_sliding_window_real_1769899977001.png"
                 />
                 <ServiceCard
-                  title="Single Leaf Doors"
-                  description="Suitable for domestic and light commercial use. Compatible with wide range of hardware."
-                  href="/products/upvc/single-leaf-doors"
-                  specs={["Versatile", "Secure", "Modern"]}
-                  image="/images/single_leaf_door_1769016600646.png"
-                />
-                <ServiceCard
-                  title="Double Leaf Doors"
-                  description="Double sash for larger clear openings. Available in swing or out swing option."
-                  href="/products/upvc/double-leaf-doors"
-                  specs={["Large Opening", "Heavy Duty"]}
-                  image="/images/double_leaf_door_1769016625650.png"
+                  title="UPVC Partitions"
+                  description="Sleek and durable partitions for modern office and home interiors."
+                  href="/products/upvc/upvc-partitions"
+                  specs={["Sound Insulation", "Modern Aesthetic"]}
+                  image="/images/upvc_partitions_1769899302276.png"
                 />
               </div>
             </div>
@@ -128,11 +122,11 @@ export default function Home() {
                   image="/images/upvc_fixed_window_view_1769016648166.png"
                 />
                 <ServiceCard
-                  title="Aluminium Casement"
-                  description="Strong, durable, and light material with a clean, ultra-slim frame design."
-                  href="/products/aluminium/casement-windows"
-                  specs={["Slim Frame", "Durable"]}
-                  image="/images/aluminium_casement_window_1769010141339.png"
+                  title="Shower Cubicles"
+                  description="Luxury glass shower enclosures for modern bathrooms with watertight execution."
+                  href="/products/aluminium/shower-cubicles"
+                  specs={["Watertight", "Elegant Design"]}
+                  image="/images/shower_cubical_1769899677610.png"
                 />
                 <ServiceCard
                   title="Combination Windows"
@@ -149,25 +143,32 @@ export default function Home() {
                   image="/images/aluminium_sliding_window_modern_1769016564516.png"
                 />
                 <ServiceCard
-                  title="Double Leaf Front Door"
-                  description="Suit wider door openings. Two door panels which swing outwards."
-                  href="/products/aluminium/double-leaf-front-doors"
-                  specs={["Wider Openings", "Outward Swing"]}
-                  image="/images/double_leaf_door_1769016625650.png"
+                  title="Structural Glazing"
+                  description="Seamless glass facades for commercial buildings. Flush glass surfaces."
+                  href="/products/aluminium/structural-glazing"
+                  specs={["Seamless", "Modern Facade"]}
+                  image="/images/structural_glazing_1769899627474.png"
                 />
                 <ServiceCard
-                  title="Toughened Glass"
-                  description="Glass partitions for offices or homes to split spaces while utilizing light."
-                  href="/products/aluminium/partitions"
-                  specs={["Modern Office", "Light & Space"]}
-                  image="/images/toughened_glass_partition_1769016480903.png"
+                  title="Frameless Glass Door"
+                  description="Elegant and minimal glass doors for a premium look with stainless steel handles."
+                  href="/products/aluminium/frameless-glass-doors"
+                  specs={["Minimalist", "High Durability"]}
+                  image="/images/frameless_glass_door_1769899641320.png"
                 />
                 <ServiceCard
-                  title="Glass & Board"
-                  description="Aluminium frames with glass panes or particle board. Ideal for partitions."
-                  href="/products/aluminium/board-partitions"
-                  specs={["Privacy", "Office Cubicles"]}
-                  image="/images/glass_particle_board_partition_1769016502970.png"
+                  title="Aluminium Partitions"
+                  description="Versatile partitioning systems for modern workspaces. Privacy and openness."
+                  href="/products/aluminium/aluminium-partitions"
+                  specs={["Flexible", "Office Ready"]}
+                  image="/images/aluminium_partitions_1769899659115.png"
+                />
+                <ServiceCard
+                  title="ACP Cladding"
+                  description="Aluminum Composite Panels for modern building exteriors. Weather protection."
+                  href="/products/aluminium/acp-cladding"
+                  specs={["Weather Proof", "Modern Look"]}
+                  image="/images/acp_cladding_real_1769899993594.png"
                 />
               </div>
             </div>

@@ -45,7 +45,7 @@ export function HeroSection() {
                         <h1 className="text-3xl md:text-5xl lg:text-7xl font-heading font-medium tracking-tight leading-[1.2]">
                             Premium <span className="text-blue-400">UPVC & Aluminium</span> <br className="hidden md:block" />
                             <span className="italic font-serif text-white/90">Windows & Doors</span>
-                            <span className="block mt-2 text-xl md:text-4xl font-light text-zinc-300">Manufacturers in Bangalore</span>
+                            <span className="block mt-2 text-xl md:text-4xl font-light text-zinc-300">Manufacturers in Bengaluru</span>
                         </h1>
 
                         <p className="max-w-lg mx-auto text-sm md:text-lg text-zinc-200 font-light leading-relaxed px-4 md:px-0 opacity-90">
@@ -68,7 +68,7 @@ export function HeroSection() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8 pt-6 w-full max-w-3xl">
                         {[
                             { label: "Years Exp.", value: "15+" },
-                            { label: "Projects", value: "500+" },
+                            { label: "Projects", value: "1000+" },
                             { label: "On-Time", value: "100%" },
                             { label: "Location", value: "Bengaluru" }
                         ].map((stat, i) => (
