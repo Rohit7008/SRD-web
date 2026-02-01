@@ -111,7 +111,7 @@ export function Header() {
                                 "lg:hidden p-3 rounded-xl transition-all active:scale-90 z-50 min-w-[44px] min-h-[44px] flex items-center justify-center",
                                 mobileMenuOpen
                                     ? "text-zinc-900 bg-zinc-100 shadow-md"
-                                    : (isScrolled ? "text-zinc-900 bg-zinc-100 shadow-sm" : "text-white bg-white/10 backdrop-blur-md shadow-lg")
+                                    : "text-zinc-900 bg-white/90 backdrop-blur-md shadow-sm"
                             )}
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             aria-label={mobileMenuOpen ? "Close Menu" : "Open Menu"}

@@ -64,15 +64,13 @@ export function Footer() {
                                 height="100%"
                                 style={{ border: 0 }}
                                 allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
                         </div>
                         <div className="space-y-4">
                             <div>
                                 <span className="text-xs uppercase font-bold text-zinc-400 block mb-1">Phone</span>
                                 <div className="flex flex-col gap-1 text-sm font-medium text-zinc-500">
-                                    <a href="tel:+919902924666" className="hover:text-zinc-900 transition-colors">+91 99029 24666</a>
+                                    <a href="tel:+919341267500" className="hover:text-zinc-900 transition-colors">+91 93412 67500</a>
                                     <ContactTrigger className="hover:text-zinc-900 transition-colors cursor-pointer" phoneNumber="+919019788904">+91 90197 88904</ContactTrigger>
                                     <a href="tel:+918049527803" className="hover:text-zinc-900 transition-colors">+91 80 49527803</a>
                                 </div>
