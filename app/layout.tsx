@@ -136,6 +136,13 @@ export default function RootLayout({
             })
           }}
         />
+        <Script
+          id="rum-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var dbpr=100;if(Math.random()*100>100-dbpr){var d="dbbRum",w=window,o=document,a=addEventListener,scr=o.createElement("script");scr.async=!0;w[d]=w[d]||[];w[d].push(["presampling",dbpr]);["error","unhandledrejection"].forEach(function(t){a(t,function(e){w[d].push([t,e])});});scr.src="https://cdn.debugbear.com/lnA6IpXQBwA3.js";o.head.appendChild(scr);}})()`
+          }}
+        />
       </body>
     </html>
   );
