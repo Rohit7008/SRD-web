@@ -10,6 +10,7 @@ import { ServiceCard } from "@/components/features/ServiceCard";
 import { HeroSection } from "@/components/features/home/HeroSection";
 import { MotionContainer } from "@/components/ui/motion-container";
 import { FAQSection } from "@/components/features/home/FAQSection";
+import { ClientsMarquee } from "@/components/features/home/ClientsMarquee";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -233,6 +234,7 @@ export default function Home() {
       </Section>
 
 
+      <ClientsMarquee />
       <FAQSection />
 
       {/* CTA Section */}
