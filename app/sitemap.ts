@@ -1,6 +1,7 @@
 
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blog-data'
+import { PRODUCTS } from '@/lib/products'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     // Replace with your actual domain when deploying
@@ -13,6 +14,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'monthly' as const,
         priority: 0.8,
     }))
+
+    // Product Pages Sitemap
+    const productRoutes: MetadataRoute.Sitemap = []
+    Object.keys(PRODUCTS).forEach((categoryKey) => {
+        const categoryProducts = PRODUCTS[categoryKey]
+        Object.values(categoryProducts).forEach((product) => {
+            productRoutes.push({
+                url: `${baseUrl}/products/${categoryKey}/${product.id}`,
+                lastModified: new Date(),
+                changeFrequency: 'weekly' as const,
+                priority: 0.9,
+            })
+        })
+    })
 
     // Static Pages Sitemap
     const routes = [
@@ -30,5 +45,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 1.0,
     }))
 
-    return [...routes, ...posts]
+    return [...routes, ...posts, ...productRoutes]
 }

@@ -5,6 +5,13 @@ import { Section } from "@/components/ui/section";
 import { CheckCircle2, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About Us | Sai Ram Decorators",
+    description: "Learn about Sai Ram Decorators, a leading manufacturer of premium UPVC and Aluminium windows and doors in Bangalore.",
+};
+
 export default function AboutPage() {
     return (
         <div className="pt-24 min-h-screen">

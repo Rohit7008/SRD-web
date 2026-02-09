@@ -3,6 +3,13 @@ import { Section } from "@/components/ui/section";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Mail, MapPin, Phone } from "lucide-react";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Contact Us | Sai Ram Decorators",
+    description: "Get in touch with Sai Ram Decorators for a free consultation and quote for UPVC and Aluminium windows in Bangalore.",
+};
+
 export default function ContactPage() {
     return (
         <div className="pt-16 pb-12">

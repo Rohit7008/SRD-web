@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     "Koramangala UPVC windows",
     "Whitefield aluminium doors"
   ],
+  alternates: {
+    canonical: './',
+  },
   authors: [{ name: "Sai Ram Decorators Team" }],
   creator: "Sai Ram Decorators",
   publisher: "Sai Ram Decorators",
