@@ -3,6 +3,8 @@ import Link from "next/link"
 import { ArrowRight, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { PRODUCT_COLORS } from "@/lib/products"
+
 
 interface ServiceCardProps {
     title: string
@@ -50,6 +52,7 @@ export function ServiceCard({ title, description, href, image, specs, priceHint,
                     {description}
                 </p>
 
+
                 <div className="flex flex-wrap gap-2">
                     {specs?.slice(0, 3).map((spec, i) => (
                         <span key={i} className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 bg-zinc-100 text-zinc-600 rounded-lg">
@@ -57,6 +60,24 @@ export function ServiceCard({ title, description, href, image, specs, priceHint,
                         </span>
                     ))}
                 </div>
+
+                {/* Available Colors Preview */}
+                <div className="flex items-center gap-2 pt-2">
+                    <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Colors:</span>
+                    <div className="flex gap-1.5">
+                        {PRODUCT_COLORS.map((color) => (
+                            <div
+                                key={color.name}
+                                className="w-4 h-4 rounded-full border border-black/10 shadow-sm"
+                                style={{ backgroundColor: color.hex }}
+                                title={color.name}
+                            />
+
+                        ))}
+                    </div>
+                </div>
+
+
 
                 <div className="pt-2 flex gap-3">
                     <Button className="flex-1 h-12 rounded-2xl bg-zinc-900 text-white hover:bg-zinc-800 shadow-lg transition-all active:scale-95 group/btn" asChild>

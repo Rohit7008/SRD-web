@@ -1,4 +1,11 @@
 
+export const PRODUCT_COLORS = [
+    { name: "Wall Nut", hex: "#5D4037" }, // Dark Brown
+    { name: "Gray", hex: "#52525b" }, // Zinc-600
+    { name: "Golden Oak", hex: "#B8860B" }, // Dark Goldenrod
+    { name: "Black", hex: "#18181b" }, // Zinc-950
+];
+
 export interface Product {
     id: string;
     title: string;

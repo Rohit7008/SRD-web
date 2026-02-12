@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { PRODUCTS } from "@/lib/products";
+import { ProductColorPicker } from "@/components/features/products/ProductColorPicker";
 
 export async function generateMetadata({ params: paramsPromise }: { params: Promise<{ category: string; slug: string }> }) {
     const params = await paramsPromise;
@@ -73,6 +74,7 @@ export default async function ProductPage({ params: paramsPromise }: { params: P
                                 </p>
                             </div>
 
+
                             <div>
                                 <h3 className="text-lg font-bold text-zinc-900 mb-4 uppercase tracking-widest text-sm text-blue-600">Key Features</h3>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -84,6 +86,13 @@ export default async function ProductPage({ params: paramsPromise }: { params: P
                                     ))}
                                 </div>
                             </div>
+
+                            {/* Color Picker Section */}
+                            <div className="pt-4">
+                                <ProductColorPicker />
+                            </div>
+
+
 
                             <div className="pt-8 border-t border-zinc-100 space-y-6">
                                 <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
