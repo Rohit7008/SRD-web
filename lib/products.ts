@@ -14,73 +14,121 @@ export interface Product {
     features: string[];
     image: string;
     category: "upvc" | "aluminium";
+    colorImages?: {
+        "Wall Nut"?: string;
+        "Gray"?: string;
+        "Golden Oak"?: string;
+        "Black"?: string;
+    };
 }
 
 export const PRODUCTS: Record<string, Record<string, Product>> = {
     upvc: {
         "sliding-windows": {
             id: "sliding-windows",
-            title: "UPVC Sliding Windows Bangalore",
+            title: "Upvc Sliding Windows Bangalore",
             description: "Traditional style and contemporary performance for Bangalore homes.",
-            longDescription: "Our UPVC Sliding Windows are designed to handle Bangalore's unique weather. They feature two sashes, with at least one sash sliding horizontally past another. They create a contemporary look while allowing in breezes from multiple directions—perfect for ventilating your home after a heavy rain.",
+            longDescription: "Our Upvc Sliding Windows are designed to handle Bangalore's unique weather. They feature two sashes, with at least one sash sliding horizontally past another. They create a contemporary look while allowing in breezes from multiple directions—perfect for ventilating your home after a heavy rain.",
             features: ["Traditional Style", "Contemporary Performance", "Horizontal Sliding Sashes", "Multi-direction Ventilation"],
             image: "/images/upvc_sliding_window_1769009483560.png",
-            category: "upvc"
+            category: "upvc",
+            colorImages: {
+                "Wall Nut": "/images/upvc_sliding_window_1769009483560.png",
+                "Gray": "/images/upvc_sliding_window_1769009483560.png",
+                "Golden Oak": "/images/upvc_sliding_window_1769009483560.png",
+                "Black": "/images/upvc_sliding_window_1769009483560.png"
+            }
         },
         "fixed-windows": {
             id: "fixed-windows",
-            title: "UPVC Fixed Windows",
+            title: "Upvc Fixed Windows",
             description: "Great way of bringing light and views into a space. Affordable and energy efficient.",
-            longDescription: "Fixed windows in UPVC frames are a great way of bringing light and views into a space, improve energy efficiency and are affordable. The basic function of a window is to admit daylight in acceptable and consistent quantities, while maintaining the ambient temperature inside the house.",
+            longDescription: "Fixed windows in Upvc frames are a great way of bringing light and views into a space, improve energy efficiency and are affordable. The basic function of a window is to admit daylight in acceptable and consistent quantities, while maintaining the ambient temperature inside the house.",
             features: ["Maximum Light", "Energy Efficient", "Affordable", "Temperature Maintenance"],
             image: "/images/upvc_fixed_window_view_1769016648166.png",
-            category: "upvc"
+            category: "upvc",
+            colorImages: {
+                "Wall Nut": "/images/upvc_fixed_window_view_1769016648166.png",
+                "Gray": "/images/upvc_fixed_window_view_1769016648166.png",
+                "Golden Oak": "/images/upvc_fixed_window_view_1769016648166.png",
+                "Black": "/images/upvc_fixed_window_view_1769016648166.png"
+            }
         },
         "casement-windows": {
             id: "casement-windows",
-            title: "UPVC Casement Windows",
+            title: "Upvc Casement Windows",
             description: "Available with a range of options to suit every home and budget.",
-            longDescription: "UPVC Casement Windows are available with a range of options to suit every home and budget. Simply have sashes that open out on special hinges that use friction to keep them open in the position you chose.",
+            longDescription: "Upvc Casement Windows are available with a range of options to suit every home and budget. Simply have sashes that open out on special hinges that use friction to keep them open in the position you chose.",
             features: ["Special Friction Hinges", "Suit Every Budget", "Customizable Opening Positions"],
             image: "/images/upvc.png",
-            category: "upvc"
+            category: "upvc",
+            colorImages: {
+                "Wall Nut": "/images/upvc.png",
+                "Gray": "/images/upvc.png",
+                "Golden Oak": "/images/upvc.png",
+                "Black": "/images/upvc.png"
+            }
         },
         "french-windows": {
             id: "french-windows",
-            title: "UPVC French Windows",
+            title: "Upvc French Windows",
             description: "Classic good looks with a maximum glass area which optimizes visibility.",
             longDescription: "Two fully opening sashes with a floating mullion, incorporating Warm Edge Spacer Bars, Sound Insulation & Excellent Thermal insulation properties. Classic good looks with a maximum glass area which optimizes visibility, making it a perfect choice for conservatories, balconies, porches or extensions.",
             features: ["Floating Mullion", "Warm Edge Spacer Bars", "Sound Insulation", "Thermal Insulation", "Maximized Visibility"],
             image: "/images/upvc_french_doors_1769009826593.png",
-            category: "upvc"
+            category: "upvc",
+            colorImages: {
+                "Wall Nut": "/images/upvc_french_doors_1769009826593.png",
+                "Gray": "/images/upvc_french_doors_1769009826593.png",
+                "Golden Oak": "/images/upvc_french_doors_1769009826593.png",
+                "Black": "/images/upvc_french_doors_1769009826593.png"
+            }
         },
         "sliding-doors": {
             id: "sliding-doors",
-            title: "UPVC Sliding Doors Bangalore",
+            title: "Upvc Sliding Doors Bangalore",
             description: "Space-saving sliding doors with maximum glass area.",
-            longDescription: "Maximize your view with our UPVC sliding doors, a popular choice for balconies and sit-outs in Bangalore apartments. They offer classic good looks with a maximum glass area which optimizes visibility, making it a perfect choice for conservatories, balconies, porches or extensions.",
+            longDescription: "Maximize your view with our Upvc sliding doors, a popular choice for balconies and sit-outs in Bangalore apartments. They offer classic good looks with a maximum glass area which optimizes visibility, making it a perfect choice for conservatories, balconies, porches or extensions.",
             features: ["Maximum Glass Area", "Optimized Visibility", "Classic Look", "Balcony Ready"],
             image: "/images/upvc_sliding_patio_door_1769017888626.png",
-            category: "upvc"
+            category: "upvc",
+            colorImages: {
+                "Wall Nut": "/images/upvc_sliding_patio_door_1769017888626.png",
+                "Gray": "/images/upvc_sliding_patio_door_1769017888626.png",
+                "Golden Oak": "/images/upvc_sliding_patio_door_1769017888626.png",
+                "Black": "/images/upvc_sliding_patio_door_1769017888626.png"
+            }
         },
 
         "foldable-sliding-windows": {
             id: "foldable-sliding-windows",
-            title: "UPVC Foldable Sliding Windows",
+            title: "Upvc Foldable Sliding Windows",
             description: "Innovative foldable mechanism for maximum openness.",
-            longDescription: "Our UPVC Foldable Sliding Windows (Bi-Fold) offer the ultimate flexibility for your home. By folding the sashes to one side, you can open up the entire aperture, merging your indoor and outdoor spaces. Perfect for balconies, terraces, and garden-facing rooms, they provide maximum ventilation and an unobstructed view.",
+            longDescription: "Our Upvc Foldable Sliding Windows (Bi-Fold) offer the ultimate flexibility for your home. By folding the sashes to one side, you can open up the entire aperture, merging your indoor and outdoor spaces. Perfect for balconies, terraces, and garden-facing rooms, they provide maximum ventilation and an unobstructed view.",
             features: ["Maximum Openness", "Bi-Fold Mechanism", "Seamless Transition", "Unobstructed View"],
             image: "/images/upvc_foldable_sliding_window_real_1769899977001.png",
-            category: "upvc"
+            category: "upvc",
+            colorImages: {
+                "Wall Nut": "/images/upvc_foldable_sliding_window_real_1769899977001.png",
+                "Gray": "/images/upvc_foldable_sliding_window_real_1769899977001.png",
+                "Golden Oak": "/images/upvc_foldable_sliding_window_real_1769899977001.png",
+                "Black": "/images/upvc_foldable_sliding_window_real_1769899977001.png"
+            }
         },
         "upvc-partitions": {
             id: "upvc-partitions",
-            title: "UPVC Partitions",
+            title: "Upvc Partitions",
             description: "Sleek and durable partitions for modern office and home interiors.",
-            longDescription: "UPVC Partitions are an excellent choice for dividing spaces in offices or homes while maintaining an open and airy feel. Built with durable UPVC frames and high-quality glass, they offer sound insulation and a modern aesthetic. Ideal for creating cabins, meeting rooms, or separate living areas.",
+            longDescription: "Upvc Partitions are an excellent choice for dividing spaces in offices or homes while maintaining an open and airy feel. Built with durable Upvc frames and high-quality glass, they offer sound insulation and a modern aesthetic. Ideal for creating cabins, meeting rooms, or separate living areas.",
             features: ["Sound Insulation", "Modern Aesthetic", "Space Division", "Durable Frames"],
             image: "/images/upvc_partitions_1769899302276.png",
-            category: "upvc"
+            category: "upvc",
+            colorImages: {
+                "Wall Nut": "/images/upvc_partitions_1769899302276.png",
+                "Gray": "/images/upvc_partitions_1769899302276.png",
+                "Golden Oak": "/images/upvc_partitions_1769899302276.png",
+                "Black": "/images/upvc_partitions_1769899302276.png"
+            }
         }
     },
     aluminium: {
@@ -91,7 +139,13 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
             longDescription: "Our Aluminium Sliding Windows are a favorite in modern Bangalore architecture. They are uniquely designed to carry a wide range of glass thickness for sound reduction—essential for blocking out city traffic noise. Best suited for exposed locations.",
             features: ["Double Glazed Options", "Sound Reduction", "Exposed Locations", "Intricate Manufacture"],
             image: "/images/aluminium_sliding_window_modern_1769016564516.png",
-            category: "aluminium"
+            category: "aluminium",
+            colorImages: {
+                "Wall Nut": "/images/aluminium_sliding_window_modern_1769016564516.png",
+                "Gray": "/images/aluminium_sliding_window_modern_1769016564516.png",
+                "Golden Oak": "/images/aluminium_sliding_window_modern_1769016564516.png",
+                "Black": "/images/aluminium_sliding_window_modern_1769016564516.png"
+            }
         },
         "fixed-windows": {
             id: "fixed-windows",
@@ -100,7 +154,13 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
             longDescription: "The basic function of a window is to admit daylight in acceptable and consistent quantities, while maintaining the ambient temperature inside the house",
             features: ["Daylight Maximization", "Consistent Quality", "Ambient Temperature Control"],
             image: "/images/upvc_fixed_window_view_1769016648166.png",
-            category: "aluminium"
+            category: "aluminium",
+            colorImages: {
+                "Wall Nut": "/images/upvc_fixed_window_view_1769016648166.png",
+                "Gray": "/images/upvc_fixed_window_view_1769016648166.png",
+                "Golden Oak": "/images/upvc_fixed_window_view_1769016648166.png",
+                "Black": "/images/upvc_fixed_window_view_1769016648166.png"
+            }
         },
         "shower-cubicles": {
             id: "shower-cubicles",
@@ -118,7 +178,13 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
             longDescription: "An integration of sliding, casement and fixed window or two windows of the same type (like casement-casement) or different types (casement-slider or fixed-slider), combination window can be made available in a variety of sizes and designs as per your need.",
             features: ["Custom Configurations", "Versatile Sizes", "Integrated Design"],
             image: "/images/combination_window_1769016525414.png",
-            category: "aluminium"
+            category: "aluminium",
+            colorImages: {
+                "Wall Nut": "/images/combination_window_1769016525414.png",
+                "Gray": "/images/combination_window_1769016525414.png",
+                "Golden Oak": "/images/combination_window_1769016525414.png",
+                "Black": "/images/combination_window_1769016525414.png"
+            }
         },
         "sliding-doors": {
             id: "sliding-doors",
@@ -127,7 +193,13 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
             longDescription: "Aluminium sliding doors give you more glass and less frame which results in more light being let through. The rooms in your property will seem bigger, brighter and warmer.",
             features: ["More Glass Less Frame", "Max Light", "Spacious Feel", "Warmer Rooms"],
             image: "/images/aluminium_sliding_window_modern_1769016564516.png",
-            category: "aluminium"
+            category: "aluminium",
+            colorImages: {
+                "Wall Nut": "/images/aluminium_sliding_window_modern_1769016564516.png",
+                "Gray": "/images/aluminium_sliding_window_modern_1769016564516.png",
+                "Golden Oak": "/images/aluminium_sliding_window_modern_1769016564516.png",
+                "Black": "/images/aluminium_sliding_window_modern_1769016564516.png"
+            }
         },
         "structural-glazing": {
             id: "structural-glazing",
@@ -154,7 +226,13 @@ export const PRODUCTS: Record<string, Record<string, Product>> = {
             longDescription: "High-quality aluminium partitioning systems designed for modern workspaces. These partitions allow for flexible office layouts, combining solid and glass panels to balance privacy and openness.",
             features: ["Flexible Layouts", "Durable Aluminium", "Privacy Options", "Quick Installation"],
             image: "/images/aluminium_partitions_1769899659115.png",
-            category: "aluminium"
+            category: "aluminium",
+            colorImages: {
+                "Wall Nut": "/images/aluminium_partitions_1769899659115.png",
+                "Gray": "/images/aluminium_partitions_1769899659115.png",
+                "Golden Oak": "/images/aluminium_partitions_1769899659115.png",
+                "Black": "/images/aluminium_partitions_1769899659115.png"
+            }
         },
         "acp-cladding": {
             id: "acp-cladding",

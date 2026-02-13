@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/section";
 
 export const metadata = {
     title: "Products | Sai Ram Decorators",
-    description: "Browse our complete range of UPVC and Aluminium solutions.",
+    description: "Browse our complete range of Upvc and Aluminium solutions.",
 };
 
 export default function ProductsPage() {
@@ -31,8 +31,8 @@ export default function ProductsPage() {
                 <Container>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <ServiceCard
-                            title="UPVC Windows & Doors"
-                            description="Energy-efficient, noise-canceling, and durable UPVC window systems optimized for Indian weather."
+                            title="Upvc Windows & Doors"
+                            description="Energy-efficient, noise-canceling, and durable Upvc window systems optimized for Indian weather."
                             href="/products/upvc"
                             specs={["Sound Proof", "Thermal Insulation", "Eco-Friendly"]}
                             image="/images/upvc.png"

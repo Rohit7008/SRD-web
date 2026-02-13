@@ -50,7 +50,7 @@ export default function WhyUsPage() {
                                 <Trophy className="w-6 h-6" />
                             </div>
                             <h3 className="text-xl font-bold font-heading mb-3">Unmatched Quality</h3>
-                            <p className="text-zinc-400">We source only the highest grade UPVC and Aluminium profiles, certified for durability and performance.</p>
+                            <p className="text-zinc-400">We source only the highest grade Upvc and Aluminium profiles, certified for durability and performance.</p>
                         </div>
                         <div className="p-8 rounded-2xl bg-zinc-800/50 hover:bg-zinc-800 transition-colors">
                             <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-6 text-white">

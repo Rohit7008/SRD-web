@@ -22,23 +22,23 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://sairamdecorators.com"),
   title: {
-    default: "Sai Ram Decorators | Premium UPVC & Aluminium Windows Manufacturers",
+    default: "Sai Ram Decorators | Premium Upvc & Aluminium Windows Manufacturers",
     template: "%s | Sai Ram Decorators"
   },
-  description: "Leading manufacturer of premium UPVC windows, slim profile aluminium systems, and structural glazing in Bengaluru. Soundproof, eco-friendly, and custom-designed solutions for your home.",
+  description: "Leading manufacturer of premium Upvc windows, slim profile aluminium systems, and structural glazing in Bengaluru. Soundproof, eco-friendly, and custom-designed solutions for your home.",
   keywords: [
-    "UPVC windows Bangalore",
+    "Upvc windows Bangalore",
     "Aluminium windows Bangalore",
     "Soundproof windows Bengaluru",
     "Slim line aluminium windows",
-    "UPVC doors Bangalore",
+    "Upvc doors Bangalore",
     "Structural glazing Bangalore",
     "Sai Ram Decorators",
     "Energy efficient windows India",
-    "Factory direct UPVC windows",
+    "Factory direct Upvc windows",
     "Best window manufacturers Bangalore",
     "Aluminium partitions Bangalore",
-    "Koramangala UPVC windows",
+    "Koramangala Upvc windows",
     "Whitefield aluminium doors"
   ],
   alternates: {
@@ -63,8 +63,8 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://sairamdecorators.com',
     siteName: 'Sai Ram Decorators',
-    title: 'Sai Ram Decorators | Premium UPVC & Aluminium Interiors',
-    description: 'Best UPVC windows and aluminium glazing experts in Bangalore. Factory-direct manufacturing of soundproof, energy-efficient windows and doors. Quality within the budget.',
+    title: 'Sai Ram Decorators | Premium Upvc & Aluminium Interiors',
+    description: 'Best Upvc windows and aluminium glazing experts in Bangalore. Factory-direct manufacturing of soundproof, energy-efficient windows and doors. Quality within the budget.',
     images: [
       {
         url: '/images/og-image.jpg', // Ensure you actually have this or a fallback
@@ -108,7 +108,7 @@ export default function RootLayout({
               "@type": "HomeAndConstructionBusiness",
               "name": "Sai Ram Decorators",
               "image": "https://sairamdecorators.com/images/og-image.jpg",
-              "description": "Leading manufacturer of premium UPVC windows, slim profile aluminium systems, and structural glazing in Bengaluru.",
+              "description": "Leading manufacturer of premium Upvc windows, slim profile aluminium systems, and structural glazing in Bengaluru.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Bangalore",

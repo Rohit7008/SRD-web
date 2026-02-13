@@ -13,7 +13,7 @@ import { ContactTrigger } from "@/components/features/contact/ContactTrigger"
 import { motion, AnimatePresence } from "framer-motion"
 
 const NAV_ITEMS = [
-    { label: "UPVC Products", href: "/products/upvc" },
+    { label: "Upvc Products", href: "/products/upvc" },
     { label: "Aluminium Products", href: "/products/aluminium" },
     { label: "About Us", href: "/about" },
     { label: "Projects", href: "/projects" },

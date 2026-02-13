@@ -24,7 +24,7 @@ export function Footer() {
                             </span>
                         </div>
                         <p className="text-zinc-500 text-sm leading-relaxed mb-6 max-w-xs">
-                            Premium architectural solutions for modern homes and commercial spaces. Specializing in UPVC, Aluminium, and Structural Glazing.
+                            Premium architectural solutions for modern homes and commercial spaces. Specializing in Upvc, Aluminium, and Structural Glazing.
                         </p>
                         <div className="flex gap-3">
                             <Link href="https://www.facebook.com/share/1BeGKaE78B/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-blue-600 hover:border-blue-600 transition-all">
@@ -39,7 +39,7 @@ export function Footer() {
                     <div>
                         <h4 className="font-heading font-bold text-zinc-900 mb-4 text-base uppercase tracking-wide">Services</h4>
                         <ul className="space-y-3 text-base text-zinc-500">
-                            <li><Link href="/products/upvc" className="hover:text-zinc-900 transition-colors">UPVC Windows & Doors</Link></li>
+                            <li><Link href="/products/upvc" className="hover:text-zinc-900 transition-colors">Upvc Windows & Doors</Link></li>
                             <li><Link href="/products/aluminium" className="hover:text-zinc-900 transition-colors">Aluminium Systems</Link></li>
                             <li><Link href="/products/partitions" className="hover:text-zinc-900 transition-colors">Partitions & Glazing</Link></li>
                         </ul>

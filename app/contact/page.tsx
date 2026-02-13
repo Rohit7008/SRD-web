@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Contact Us | Sai Ram Decorators",
-    description: "Get in touch with Sai Ram Decorators for a free consultation and quote for UPVC and Aluminium windows in Bangalore.",
+    description: "Get in touch with Sai Ram Decorators for a free consultation and quote for Upvc and Aluminium windows in Bangalore.",
 };
 
 export default function ContactPage() {

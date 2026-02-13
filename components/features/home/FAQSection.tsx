@@ -23,18 +23,18 @@ export function FAQSection() {
                     <Accordion type="single" collapsible className="w-full">
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="text-lg font-bold text-zinc-900">
-                                How much do UPVC windows cost in Bangalore?
+                                How much do Upvc windows cost in Bangalore?
                             </AccordionTrigger>
                             <AccordionContent className="text-zinc-600 leading-relaxed text-base">
-                                The cost of UPVC windows in Bangalore typically ranges from ₹450 to ₹950 per square foot, depending on the profile type (sliding or casement), glass thickness (single or double glazing), and wood-finish laminations. At Sai Ram Decorators, we provide a transparent quote within 24 hours of a site visit.
+                                The cost of Upvc windows in Bangalore typically ranges from ₹450 to ₹950 per square foot, depending on the profile type (sliding or casement), glass thickness (single or double glazing), and wood-finish laminations. At Sai Ram Decorators, we provide a transparent quote within 24 hours of a site visit.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
                             <AccordionTrigger className="text-lg font-bold text-zinc-900">
-                                Which is better for Bangalore climate: UPVC or Aluminium?
+                                Which is better for Bangalore climate: Upvc or Aluminium?
                             </AccordionTrigger>
                             <AccordionContent className="text-zinc-600 leading-relaxed text-base">
-                                Both have unique advantages. UPVC is engineered to withstand **Bangalore&apos;s heavy monsoon rains** without leaking or rotting. It also offers superior heat insulation. Aluminium (especially slim profiles) provides better aesthetics for modern villas and high-rise apartments, but UPVC is generally better suited for thermal comfort in our changing weather.
+                                Both have unique advantages. Upvc is engineered to withstand **Bangalore&apos;s heavy monsoon rains** without leaking or rotting. It also offers superior heat insulation. Aluminium (especially slim profiles) provides better aesthetics for modern villas and high-rise apartments, but Upvc is generally better suited for thermal comfort in our changing weather.
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">

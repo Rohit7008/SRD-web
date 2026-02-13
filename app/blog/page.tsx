@@ -6,9 +6,9 @@ import { BlogCard } from "@/components/features/blog/BlogCard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Expert Insights: UPVC & Aluminium Windows Blog | Sai Ram Decorators",
-    description: "Read our expert guides on choosing the best windows for your Indian home. We cover cost comparisons, soundproofing tips, and design trends for UPVC and Aluminium systems.",
-    keywords: ["UPVC windows blog", "Aluminium windows India guide", "window cost calculator India", "soundproof windows blog"],
+    title: "Expert Insights: Upvc & Aluminium Windows Blog | Sai Ram Decorators",
+    description: "Read our expert guides on choosing the best windows for your Indian home. We cover cost comparisons, soundproofing tips, and design trends for Upvc and Aluminium systems.",
+    keywords: ["Upvc windows blog", "Aluminium windows India guide", "window cost calculator India", "soundproof windows blog"],
 };
 
 export default function BlogIndexPage() {
@@ -73,7 +73,7 @@ export default function BlogIndexPage() {
                     <div className="max-w-4xl mx-auto text-center space-y-4">
                         <h3 className="text-white font-bold text-lg">Why Read Our Blog?</h3>
                         <p>
-                            At Sai Ram Decorators, we believe an informed customer is our best customer. The Indian market is flooded with misinformation about UPVC vs Aluminium. Our goal is to provide transparent, data-backed comparisons to help you make the everlasting choice for your dream home.
+                            At Sai Ram Decorators, we believe an informed customer is our best customer. The Indian market is flooded with misinformation about Upvc vs Aluminium. Our goal is to provide transparent, data-backed comparisons to help you make the everlasting choice for your dream home.
                         </p>
                     </div>
                 </Container>

@@ -11,6 +11,7 @@ import { HeroSection } from "@/components/features/home/HeroSection";
 import { MotionContainer } from "@/components/ui/motion-container";
 import { FAQSection } from "@/components/features/home/FAQSection";
 import { ClientsMarquee } from "@/components/features/home/ClientsMarquee";
+import { ColorShowcase } from "@/components/features/home/ColorShowcase";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
             <MotionContainer className="max-w-2xl">
               <span className="text-blue-600 font-bold tracking-[0.2em] uppercase text-[10px] md:text-sm mb-3 block">Our Manufacturing Range</span>
               <h2 className="text-4xl md:text-5xl font-heading font-medium text-zinc-900 mb-4 tracking-tight leading-tight">
-                Premium <span className="italic font-serif">UPVC</span> & Aluminium <span className="italic font-serif">Systems</span>
+                Premium <span className="italic font-serif">Upvc</span> & Aluminium <span className="italic font-serif">Systems</span>
               </h2>
               <p className="text-zinc-500 text-lg leading-relaxed max-w-xl">
                 We manufacture high-quality, eco-friendly, and precise window and door systems tailored to your needs.
@@ -47,62 +48,70 @@ export default function Home() {
 
 
           <div className="space-y-16">
-            {/* UPVC Category */}
+            {/* Upvc Category */}
             <div>
-              <h3 className="text-2xl font-bold text-zinc-900 mb-8 border-l-4 border-blue-600 pl-4">UPVC Windows & Doors</h3>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-8 border-l-4 border-blue-600 pl-4">Upvc Windows & Doors</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-6">
                 <ServiceCard
-                  title="UPVC Sliding Windows"
+                  title="Upvc Sliding Windows"
                   description="Traditional style with contemporary performance. Two sashes sliding horizontally."
                   href="/products/upvc/sliding-windows"
                   specs={["Smooth Glide", "Ventilation"]}
                   image="/images/upvc_sliding_window_1769009483560.png"
+                  id="sliding-windows"
                 />
                 <ServiceCard
-                  title="UPVC Fixed Windows"
+                  title="Upvc Fixed Windows"
                   description="Great way of bringing light and views into a space. Affordable and energy efficient."
                   href="/products/upvc/fixed-windows"
                   specs={["Max Light", "Affordable"]}
                   image="/images/upvc_fixed_window_view_1769016648166.png"
+                  id="fixed-windows"
                 />
                 <ServiceCard
-                  title="UPVC Casement"
+                  title="Upvc Casement"
                   description="Sashes open out on special friction hinges to stay open in any position."
                   href="/products/upvc/casement-windows"
                   specs={["Friction Hinges", "Customizable"]}
                   image="/images/upvc.png"
+                  id="casement-windows"
                 />
                 <ServiceCard
-                  title="UPVC French Windows"
+                  title="Upvc French Windows"
                   description="Two fully opening sashes with a floating mullion and excellent thermal insulation."
                   href="/products/upvc/french-windows"
                   specs={["Thermal Insulation", "Sound Proof"]}
                   image="/images/upvc_french_doors_1769009826593.png"
+                  id="french-windows"
                 />
                 <ServiceCard
-                  title="UPVC Sliding Doors"
+                  title="Upvc Sliding Doors"
                   description="Classic good looks with a maximum glass area which optimizes visibility."
                   href="/products/upvc/sliding-doors"
                   specs={["Max Visibility", "Space Saving"]}
                   image="/images/upvc_sliding_patio_door_1769017888626.png"
+                  id="sliding-doors"
                 />
 
                 <ServiceCard
-                  title="UPVC Foldable Sliding Windows"
+                  title="Upvc Foldable Sliding Windows"
                   description="Innovative foldable mechanism for maximum openness."
                   href="/products/upvc/foldable-sliding-windows"
                   specs={["Max Openness", "Bi-Fold", "Seamless"]}
                   image="/images/upvc_foldable_sliding_window_real_1769899977001.png"
+                  id="foldable-sliding-windows"
                 />
                 <ServiceCard
-                  title="UPVC Partitions"
+                  title="Upvc Partitions"
                   description="Sleek and durable partitions for modern office and home interiors."
                   href="/products/upvc/upvc-partitions"
                   specs={["Sound Insulation", "Modern Aesthetic"]}
                   image="/images/upvc_partitions_1769899302276.png"
+                  id="upvc-partitions"
                 />
               </div>
             </div>
+
 
             {/* Aluminium Category */}
             <div>
@@ -114,6 +123,7 @@ export default function Home() {
                   href="/products/aluminium/sliding-windows"
                   specs={["Sound Reduction", "Heavy Duty"]}
                   image="/images/aluminium_sliding_window_modern_1769016564516.png"
+                  id="sliding-windows"
                 />
                 <ServiceCard
                   title="Aluminium Fixed"
@@ -121,6 +131,7 @@ export default function Home() {
                   href="/products/aluminium/fixed-windows"
                   specs={["Daylight", "Temp Control"]}
                   image="/images/upvc_fixed_window_view_1769016648166.png"
+                  id="fixed-windows"
                 />
                 <ServiceCard
                   title="Shower Cubicles"
@@ -128,6 +139,7 @@ export default function Home() {
                   href="/products/aluminium/shower-cubicles"
                   specs={["Watertight", "Elegant Design"]}
                   image="/images/shower_cubical_1769899677610.png"
+                  id="shower-cubicles"
                 />
                 <ServiceCard
                   title="Combination Windows"
@@ -135,6 +147,7 @@ export default function Home() {
                   href="/products/aluminium/combination-windows"
                   specs={["Versatile", "Custom Design"]}
                   image="/images/combination_window_1769016525414.png"
+                  id="combination-windows"
                 />
                 <ServiceCard
                   title="Aluminium Sliding Door"
@@ -142,6 +155,7 @@ export default function Home() {
                   href="/products/aluminium/sliding-doors"
                   specs={["More Glass", "Brighter Rooms"]}
                   image="/images/aluminium_sliding_window_modern_1769016564516.png"
+                  id="sliding-doors"
                 />
                 <ServiceCard
                   title="Structural Glazing"
@@ -149,6 +163,7 @@ export default function Home() {
                   href="/products/aluminium/structural-glazing"
                   specs={["Seamless", "Modern Facade"]}
                   image="/images/structural_glazing_1769899627474.png"
+                  id="structural-glazing"
                 />
                 <ServiceCard
                   title="Frameless Glass Door"
@@ -156,6 +171,7 @@ export default function Home() {
                   href="/products/aluminium/frameless-glass-doors"
                   specs={["Minimalist", "High Durability"]}
                   image="/images/frameless_glass_door_1769899641320.png"
+                  id="frameless-glass-doors"
                 />
                 <ServiceCard
                   title="Aluminium Partitions"
@@ -163,6 +179,7 @@ export default function Home() {
                   href="/products/aluminium/aluminium-partitions"
                   specs={["Flexible", "Office Ready"]}
                   image="/images/aluminium_partitions_1769899659115.png"
+                  id="aluminium-partitions"
                 />
                 <ServiceCard
                   title="ACP Cladding"
@@ -170,9 +187,13 @@ export default function Home() {
                   href="/products/aluminium/acp-cladding"
                   specs={["Weather Proof", "Modern Look"]}
                   image="/images/acp_cladding_real_1769899993594.png"
+                  id="acp-cladding"
                 />
               </div>
             </div>
+
+            {/* Color Showcase Banner - Moved here */}
+            <ColorShowcase />
           </div>
         </Container>
       </Section>

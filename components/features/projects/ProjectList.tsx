@@ -7,7 +7,7 @@ const PROJECTS = [
     {
         title: "Luxury Villa",
         location: "Indiranagar, Bangalore",
-        description: "Complete UPVC fenestration solution for a modern luxury villa.",
+        description: "Complete Upvc fenestration solution for a modern luxury villa.",
         image: "/images/hero_luxury_home_1769009357122.png",
     },
     {
@@ -25,7 +25,7 @@ const PROJECTS = [
     {
         title: "Garden Conservatory",
         location: "Koramangala, Bangalore",
-        description: "Elegant UPVC French doors opening to a landscaped garden.",
+        description: "Elegant Upvc French doors opening to a landscaped garden.",
         image: "/images/french_door_garden_1769016541444.png",
     },
     {

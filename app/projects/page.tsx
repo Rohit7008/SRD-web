@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Our Projects | Sai Ram Decorators",
-    description: "View our portfolio of residential and commercial projects showcasing our UPVC and Aluminium window installations in Bangalore.",
+    description: "View our portfolio of residential and commercial projects showcasing our Upvc and Aluminium window installations in Bangalore.",
 };
 
 export default function ProjectsPage() {
@@ -19,7 +19,7 @@ export default function ProjectsPage() {
                         Featured Projects
                     </h1>
                     <p className="text-zinc-400 text-lg max-w-2xl font-light leading-relaxed">
-                        Explore our diverse portfolio of residential and commercial projects, showcasing our expertise in UPVC and Aluminium solutions.
+                        Explore our diverse portfolio of residential and commercial projects, showcasing our expertise in Upvc and Aluminium solutions.
                     </p>
                 </Container>
             </div>

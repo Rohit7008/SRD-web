@@ -5,15 +5,21 @@ import { PRODUCT_COLORS } from "@/lib/products";
 import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
 
-export function ProductColorPicker() {
-    const [selectedColor, setSelectedColor] = useState(PRODUCT_COLORS[0]);
+interface ProductColorPickerProps {
+    selectedColor?: { name: string; hex: string };
+    onColorSelect?: (color: { name: string; hex: string }) => void;
+}
+
+export function ProductColorPicker({ selectedColor, onColorSelect }: ProductColorPickerProps) {
+    // Default to first color if not provided (though parent should ideally provide it)
+    const activeColor = selectedColor || PRODUCT_COLORS[0];
 
     return (
         <div className="bg-zinc-50 border border-zinc-100 rounded-2xl p-8 max-w-xl">
             <div className="flex items-baseline justify-between mb-4">
                 <h3 className="text-lg font-bold text-zinc-900">Available Colors</h3>
                 <span className="text-sm font-medium text-zinc-500 uppercase tracking-widest">
-                    {selectedColor?.name}
+                    {activeColor?.name}
                 </span>
             </div>
 
@@ -21,10 +27,10 @@ export function ProductColorPicker() {
                 {PRODUCT_COLORS.map((color) => (
                     <button
                         key={color.name}
-                        onClick={() => setSelectedColor(color)}
+                        onClick={() => onColorSelect?.(color)}
                         className={cn(
                             "group relative w-16 h-16 rounded-full border-2 shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
-                            selectedColor.name === color.name
+                            activeColor.name === color.name
                                 ? "border-blue-600 scale-110"
                                 : "border-white hover:scale-105 hover:border-zinc-300"
                         )}
@@ -33,7 +39,7 @@ export function ProductColorPicker() {
                         title={color.name}
                         aria-label={`Select ${color.name} color`}
                     >
-                        {selectedColor.name === color.name && (
+                        {activeColor.name === color.name && (
                             <span className="absolute inset-0 flex items-center justify-center text-white drop-shadow-md">
                                 <Check className="w-5 h-5 stroke-[3px]" />
                             </span>

@@ -9,7 +9,7 @@ import { PRODUCTS } from "@/lib/products";
 
 export async function generateMetadata({ params: paramsPromise }: { params: Promise<{ category: string }> }) {
     const params = await paramsPromise;
-    const categoryName = params.category === "upvc" ? "UPVC Windows & Doors" :
+    const categoryName = params.category === "upvc" ? "Upvc Windows & Doors" :
         params.category === "aluminium" ? "Aluminium Systems" : null;
 
     if (!categoryName) {
@@ -33,9 +33,9 @@ export default async function CategoryPage({ params: paramsPromise }: { params: 
         return notFound();
     }
 
-    const categoryName = categoryKey === "upvc" ? "UPVC Windows & Doors" : "Aluminium Systems";
+    const categoryName = categoryKey === "upvc" ? "Upvc Windows & Doors" : "Aluminium Systems";
     const categoryDesc = categoryKey === "upvc"
-        ? "Authentically re-create the classical style of traditional timber windows with our modern, thermally-efficient UPVC systems."
+        ? "Authentically re-create the classical style of traditional timber windows with our modern, thermally-efficient Upvc systems."
         : "Strong, durable, and light material with a clean, ultra-slim frame design allowing an abundance of natural light.";
 
     return (

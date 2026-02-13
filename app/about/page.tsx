@@ -9,7 +9,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "About Us | Sai Ram Decorators",
-    description: "Learn about Sai Ram Decorators, a leading manufacturer of premium UPVC and Aluminium windows and doors in Bangalore.",
+    description: "Learn about Sai Ram Decorators, a leading manufacturer of premium Upvc and Aluminium windows and doors in Bangalore.",
 };
 
 export default function AboutPage() {
@@ -24,7 +24,7 @@ export default function AboutPage() {
                                 Sai Ram Decorators
                             </h1>
                             <h2 className="text-lg md:text-2xl text-zinc-500 font-medium">
-                                Manufacturer of UPVC, Aluminium Windows, Doors & Partitions
+                                Manufacturer of Upvc, Aluminium Windows, Doors & Partitions
                             </h2>
                             <div className="w-20 h-1 bg-blue-600 rounded-full" />
 
@@ -33,7 +33,7 @@ export default function AboutPage() {
                             </p>
 
                             <p className="text-base md:text-lg text-zinc-600 leading-relaxed">
-                                Authentically re-create the classical style of traditional timber windows and doors with a modern, thermally-efficient, UPVC, Aluminium window and Door system exclusively by Sai Ram Decorators.
+                                Authentically re-create the classical style of traditional timber windows and doors with a modern, thermally-efficient, Upvc, Aluminium window and Door system exclusively by Sai Ram Decorators.
                             </p>
                         </div>
                         <div className="flex-1 relative h-[400px] w-full rounded-3xl overflow-hidden shadow-2xl bg-zinc-100">

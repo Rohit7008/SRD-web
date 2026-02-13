@@ -17,18 +17,18 @@ export const blogPosts: BlogPost[] = [
     {
         id: "1",
         slug: "upvc-vs-aluminium-windows-bangalore-comparison",
-        title: "UPVC vs Aluminium Windows: Which is Best for Your Bangalore Home? (2025 Guide)",
-        excerpt: "Confused between UPVC and Aluminium? We break down the cost, durability, soundproofing, and aesthetic differences to help you make the right choice for your Bangalore home.",
+        title: "Upvc vs Aluminium Windows: Which is Best for Your Bangalore Home? (2025 Guide)",
+        excerpt: "Confused between Upvc and Aluminium? We break down the cost, durability, soundproofing, and aesthetic differences to help you make the right choice for your Bangalore home.",
         coverImage: "/images/blog/upvc-vs-aluminium-hero.jpg",
         date: "October 15, 2024",
         author: "SRD Editorial Team",
         readingTime: "8 min read",
         category: "Comparison Guide",
-        tags: ["UPVC", "Aluminium", "Bangalore Home", "Comparison"],
+        tags: ["Upvc", "Aluminium", "Bangalore Home", "Comparison"],
         content: `
-## The Great Debate: UPVC or Aluminium?
+## The Great Debate: Upvc or Aluminium?
 
-One of the most common questions we get from homeowners in Bangalore is: **"Which is better, UPVC or Aluminium?"**
+One of the most common questions we get from homeowners in Bangalore is: **"Which is better, Upvc or Aluminium?"**
 
 The honest answer? It depends on what you value most. Are you looking for maximum soundproofing against Bangalore's traffic? Or are you looking for the slimmest possible frame for a modern panoramic view?
 
@@ -37,24 +37,24 @@ In this comprehensive guide, we compare these two market leaders side-by-side to
 ### 1. Durability and Lifespan
 **Aluminium** is a metal. It is inherently strong, robust, and can last for 40+ years. It doesn't warp or crack. However, in areas with high pollution, lower-grade aluminium can corrode if not properly powder-coated.
 
-**UPVC (Unplasticized Polyvinyl Chloride)** is a highly durable plastic polymer. High-quality UPVC windows are UV-stabilized, meaning they won't fade or yellow under the harsh Bangalore sun. They are immune to rot, rust, and termite attacks, making them excellent for our climate.
+**Upvc (Unplasticized Polyvinyl Chloride)** is a highly durable plastic polymer. High-quality Upvc windows are UV-stabilized, meaning they won't fade or yellow under the harsh Bangalore sun. They are immune to rot, rust, and termite attacks, making them excellent for our climate.
 
 ### 2. Soundproofing and Insulation
-This is where **UPVC** is the undisputed king.
-*   **UPVC**: Being a bad conductor of heat, UPVC frames offer excellent thermal insulation. When combined with double glazing, they can reduce outside noise by up to 40 decibels.
+This is where **Upvc** is the undisputed king.
+*   **Upvc**: Being a bad conductor of heat, Upvc frames offer excellent thermal insulation. When combined with double glazing, they can reduce outside noise by up to 40 decibels.
 *   **Aluminium**: Being a metal, it is a conductor. Standard aluminium windows can let heat pass through. To get similar insulation, you need "Thermally Broken" aluminium profiles, which are significantly more expensive.
 
 ### 3. Aesthetics and Design
 *   **Aluminium**: If you want the "less frame, more glass" look, Aluminium is your winner. Its strength allows for ultra-slim frames that modern architects love.
-*   **UPVC**: Generally has chunkier frames compared to premium aluminium. However, modern UPVC now comes in various laminations (wooden finish, grey, black) that mimic other materials beautifully.
+*   **Upvc**: Generally has chunkier frames compared to premium aluminium. However, modern Upvc now comes in various laminations (wooden finish, grey, black) that mimic other materials beautifully.
 
 ### 4. Cost Comparison
 For most Bangalore homeowners, budget is key.
-*   **UPVC**: Generally more affordable for the performance you get. It offers the best "bang for your buck" regarding soundproofing and energy efficiency.
-*   **Aluminium**: Standard aluminium is cheap, but **Premium Powder-Coated or Anodized Aluminium** (which we recommend) is often 20-30% more expensive than UPVC.
+*   **Upvc**: Generally more affordable for the performance you get. It offers the best "bang for your buck" regarding soundproofing and energy efficiency.
+*   **Aluminium**: Standard aluminium is cheap, but **Premium Powder-Coated or Anodized Aluminium** (which we recommend) is often 20-30% more expensive than Upvc.
 
 ### Verdict
-*   **Choose UPVC if:** You prioritize soundproofing, thermal insulation (AC bill savings), and value for money.
+*   **Choose Upvc if:** You prioritize soundproofing, thermal insulation (AC bill savings), and value for money.
 *   **Choose Aluminium if:** You want ultra-slim frames, huge floor-to-ceiling heights, and a sleek, premium architectural look.
     `
     },
@@ -68,7 +68,7 @@ For most Bangalore homeowners, budget is key.
         author: "Acoustic Expert",
         readingTime: "6 min read",
         category: "Problem Solving",
-        tags: ["Soundproofing", "Noise Reduction", "Bangalore Traffic", "UPVC"],
+        tags: ["Soundproofing", "Noise Reduction", "Bangalore Traffic", "Upvc"],
         content: `
 ## Is Traffic Noise Ruining Your Peace?
 
@@ -82,9 +82,9 @@ True soundproofing typically involves three layers of defense:
 2.  **Double Glazing (DGU)**: Two panes of glass separated by an inert gas (Argon) or air gap. This breaks the sound wave.
 3.  **Laminated Glass**: A special PVB layer sandwiched between glass panes that acts as a dampener for vibration.
 
-### Why UPVC is Best for Soundproofing
-UPVC materials naturally dampen vibration. Unlike metal, which rings when hit, UPVC absorbs energy.
-*   Combined with **double gaskets** (EPDM rubber seals), UPVC windows create an airtight seal that noise finds hard to penetrate.
+### Why Upvc is Best for Soundproofing
+Upvc materials naturally dampen vibration. Unlike metal, which rings when hit, Upvc absorbs energy.
+*   Combined with **double gaskets** (EPDM rubber seals), Upvc windows create an airtight seal that noise finds hard to penetrate.
 *   Our customers often report a **50% to 80% reduction in perceived noise** after installation.
 
 ### The Health Benefits
@@ -157,7 +157,7 @@ Standard aluminium windows have a sightline (frame width) of 50-60mm.
 ### Why Designers Love Them
 1.  **Maximized Light**: With less frame obstructing the glass, your room gets flooded with natural light.
 2.  **Indoor-Outdoor Connection**: These windows effectively disappear, making your garden or balcony feel like part of your living room.
-3.  **Floor-to-Ceiling Impact**: Slim aluminium is incredibly strong. We can build doors that are **10 feet or 12 feet high**, creating a grand entrance that UPVC simply cannot match structurally.
+3.  **Floor-to-Ceiling Impact**: Slim aluminium is incredibly strong. We can build doors that are **10 feet or 12 feet high**, creating a grand entrance that Upvc simply cannot match structurally.
 
 ### Is it right for you?
 If you are building a villa, a penthouse, or a home with a view in Bangalore, Slim Aluminium is the ultimate upgrade. It elevates the property value and aesthetics instantly.
@@ -166,35 +166,35 @@ If you are building a villa, a penthouse, or a home with a view in Bangalore, Sl
     {
         id: "5",
         slug: "is-upvc-good-for-bangalore-climate",
-        title: "10 Myths Busted: Is UPVC Really Good for the Bangalore Climate?",
-        excerpt: "Will it yellow? Will it melt? We debunk the common myths about using UPVC windows in Bangalore's changing weather.",
+        title: "10 Myths Busted: Is Upvc Really Good for the Bangalore Climate?",
+        excerpt: "Will it yellow? Will it melt? We debunk the common myths about using Upvc windows in Bangalore's changing weather.",
         coverImage: "/images/blog/upvc-sun-test.jpg",
         date: "November 12, 2024",
         author: "Technical Team",
         readingTime: "7 min read",
         category: "Myth Busting",
-        tags: ["UPVC", "Bangalore", "Weather Proof", "Myths"],
+        tags: ["Upvc", "Bangalore", "Weather Proof", "Myths"],
         content: `
 ## "But plastic melts in the sun, right?"
 
-We hear this often. In the 90s, early PVC products did have issues. But **UPVC (Unplasticized PVC)** is a completely different beast.
+We hear this often. In the 90s, early PVC products did have issues. But **Upvc (Unplasticized PVC)** is a completely different beast.
 
 Let's look at the facts versus the myths regarding Bangalore's climate.
 
-### Myth 1: UPVC turns yellow in the sun.
-**Fact**: This only happens with cheap, unbranded Chinese imports. High-quality UPVC profiles (like the ones we use) are improved with **Titanium Dioxide**, a UV stabilizer that prevents discoloration even in peak Bangalore summers.
+### Myth 1: Upvc turns yellow in the sun.
+**Fact**: This only happens with cheap, unbranded Chinese imports. High-quality Upvc profiles (like the ones we use) are improved with **Titanium Dioxide**, a UV stabilizer that prevents discoloration even in peak Bangalore summers.
 
 ### Myth 2: They are not as strong as wood.
-**Fact**: UPVC windows are reinforced with **Galvanized Steel** inside the chamber. They are strong enough to withstand high wind loads in high-rise apartments in areas like Sarjapur or Hebbal.
+**Fact**: Upvc windows are reinforced with **Galvanized Steel** inside the chamber. They are strong enough to withstand high wind loads in high-rise apartments in areas like Sarjapur or Hebbal.
 
 ### Myth 3: It looks "cheap" or "plasticky".
-**Fact**: Modern UPVC comes in stunning wood-grain, walnut, and mahogany finishes. You get the warmth and look of wood without the termite problems or need for annual polishing.
+**Fact**: Modern Upvc comes in stunning wood-grain, walnut, and mahogany finishes. You get the warmth and look of wood without the termite problems or need for annual polishing.
 
 ### Myth 4: It's bad for the environment.
-**Fact**: UPVC is highly recyclable. Also, because it lasts for 40 years and saves immense amounts of energy (AC bills), its lifetime carbon footprint is often lower than aluminium.
+**Fact**: Upvc is highly recyclable. Also, because it lasts for 40 years and saves immense amounts of energy (AC bills), its lifetime carbon footprint is often lower than aluminium.
 
 ### Conclusion
-UPVC is not just "good" for the Bangalore climate; it was practically *engineered* for it. It handles moisture (monsoons) and heat (summers) better than traditional wood ever could.
+Upvc is not just "good" for the Bangalore climate; it was practically *engineered* for it. It handles moisture (monsoons) and heat (summers) better than traditional wood ever could.
     `
     }
 ];

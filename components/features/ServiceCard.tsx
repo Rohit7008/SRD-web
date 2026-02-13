@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, ChevronRight } from "lucide-react"
@@ -14,15 +17,23 @@ interface ServiceCardProps {
     specs?: string[]
     priceHint?: string
     className?: string
+    id?: string // Added ID prop to identify products
+    colorImages?: Record<string, string>
 }
 
-export function ServiceCard({ title, description, href, image, specs, priceHint, className }: ServiceCardProps) {
+export function ServiceCard({ title, description, href, image, specs, priceHint, className, id, colorImages }: ServiceCardProps) {
+    const [currentImage, setCurrentImage] = useState(image);
+
+    useEffect(() => {
+        setCurrentImage(image);
+    }, [image]);
+
     return (
         <div className={cn("group flex flex-col h-full bg-white rounded-3xl overflow-hidden border border-zinc-100 shadow-sm hover:shadow-xl transition-all duration-500", className)}>
             <Link href={href} className="block overflow-hidden aspect-[16/10] relative">
-                {image ? (
+                {currentImage ? (
                     <Image
-                        src={image}
+                        src={currentImage}
                         alt={title}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -62,20 +73,34 @@ export function ServiceCard({ title, description, href, image, specs, priceHint,
                 </div>
 
                 {/* Available Colors Preview */}
-                <div className="flex items-center gap-2 pt-2">
-                    <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Colors:</span>
-                    <div className="flex gap-1.5">
-                        {PRODUCT_COLORS.map((color) => (
-                            <div
-                                key={color.name}
-                                className="w-4 h-4 rounded-full border border-black/10 shadow-sm"
-                                style={{ backgroundColor: color.hex }}
-                                title={color.name}
-                            />
+                {/* Available Colors Preview */}
+                {!["acp-cladding", "shower-cubicles", "frameless-glass-doors", "structural-glazing"].includes(id || "") && (
+                    <div className="flex items-center gap-2 pt-2">
+                        <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Colors:</span>
+                        <div className="flex gap-1.5">
+                            {PRODUCT_COLORS.map((color) => (
+                                <div
+                                    key={color.name}
+                                    className="w-4 h-4 rounded-full border border-black/10 shadow-sm cursor-pointer hover:scale-125 transition-transform"
+                                    style={{ backgroundColor: color.hex }}
+                                    title={color.name}
+                                    onClick={(e) => {
+                                        e.preventDefault(); // Prevent link navigation
+                                        if (colorImages && colorImages[color.name]) {
+                                            setCurrentImage(colorImages[color.name]);
+                                        }
+                                    }}
+                                    onMouseEnter={() => {
+                                        if (colorImages && colorImages[color.name]) {
+                                            setCurrentImage(colorImages[color.name]);
+                                        }
+                                    }}
+                                />
 
-                        ))}
+                            ))}
+                        </div>
                     </div>
-                </div>
+                )}
 
 
 
