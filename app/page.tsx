@@ -57,7 +57,7 @@ export default function Home() {
                   description="Traditional style with contemporary performance. Two sashes sliding horizontally."
                   href="/products/upvc/sliding-windows"
                   specs={["Smooth Glide", "Ventilation"]}
-                  image="/images/upvc_sliding_window_1769009483560.png"
+                  image="/images/upvc_sliding_window_golden_oak.png"
                   id="sliding-windows"
                 />
                 <ServiceCard
@@ -65,7 +65,7 @@ export default function Home() {
                   description="Great way of bringing light and views into a space. Affordable and energy efficient."
                   href="/products/upvc/fixed-windows"
                   specs={["Max Light", "Affordable"]}
-                  image="/images/upvc_fixed_window_view_1769016648166.png"
+                  image="/images/upvc_fixed_window_golden_oak.png"
                   id="fixed-windows"
                 />
                 <ServiceCard
@@ -73,7 +73,7 @@ export default function Home() {
                   description="Sashes open out on special friction hinges to stay open in any position."
                   href="/products/upvc/casement-windows"
                   specs={["Friction Hinges", "Customizable"]}
-                  image="/images/upvc.png"
+                  image="/images/upvc_casement_window_grey_open.png"
                   id="casement-windows"
                 />
                 <ServiceCard
@@ -81,7 +81,7 @@ export default function Home() {
                   description="Two fully opening sashes with a floating mullion and excellent thermal insulation."
                   href="/products/upvc/french-windows"
                   specs={["Thermal Insulation", "Sound Proof"]}
-                  image="/images/upvc_french_doors_1769009826593.png"
+                  image="/images/upvc_casement_window_black.png"
                   id="french-windows"
                 />
                 <ServiceCard
@@ -89,7 +89,7 @@ export default function Home() {
                   description="Classic good looks with a maximum glass area which optimizes visibility."
                   href="/products/upvc/sliding-doors"
                   specs={["Max Visibility", "Space Saving"]}
-                  image="/images/upvc_sliding_patio_door_1769017888626.png"
+                  image="/images/upvc_sliding_window_golden_oak.png"
                   id="sliding-doors"
                 />
 
@@ -98,7 +98,7 @@ export default function Home() {
                   description="Innovative foldable mechanism for maximum openness."
                   href="/products/upvc/foldable-sliding-windows"
                   specs={["Max Openness", "Bi-Fold", "Seamless"]}
-                  image="/images/upvc_foldable_sliding_window_real_1769899977001.png"
+                  image="/images/upvc_sliding_window_wall_nut.png"
                   id="foldable-sliding-windows"
                 />
                 <ServiceCard
@@ -146,7 +146,7 @@ export default function Home() {
                   description="Integration of sliding, casement, and fixed windows. Versatile designs."
                   href="/products/aluminium/combination-windows"
                   specs={["Versatile", "Custom Design"]}
-                  image="/images/combination_window_1769016525414.png"
+                  image="/images/upvc_sliding_window_black.png"
                   id="combination-windows"
                 />
                 <ServiceCard
