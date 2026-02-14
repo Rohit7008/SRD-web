@@ -89,7 +89,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${playfair.variable} ${manrope.variable} font-sans antialiased bg-zinc-50 text-zinc-900 selection:bg-stone-200 selection:text-stone-900`}
+        className={`${playfair.variable} ${manrope.variable} font-sans antialiased bg-zinc-50 text-zinc-900 selection:bg-stone-200 selection:text-stone-900 overflow-x-hidden`}
       >
         <div className="flex min-h-screen flex-col">
           <Header />

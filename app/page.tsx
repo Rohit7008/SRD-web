@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-0 w-full overflow-x-hidden">
+    <div className="flex flex-col gap-0 w-full">
       {/* Hero Section */}
       <HeroSection />
 
