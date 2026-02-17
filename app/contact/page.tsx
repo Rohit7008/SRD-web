@@ -34,7 +34,7 @@ export default function ContactPage() {
                                         <h3 className="text-lg font-bold text-zinc-900 mb-1">Call Us</h3>
                                         <p className="text-zinc-500 mb-1">Mon-Sat from 9am to 7pm</p>
                                         <div className="flex flex-col">
-                                            <a href="tel:+919902924666" className="text-blue-600 font-medium hover:underline text-lg">+91 99029 24666</a>
+                                            <a href="tel:+919341267500" className="text-blue-600 font-medium hover:underline text-lg">+91 93412 67500</a>
                                             <a href="tel:+919019788904" className="text-blue-600 font-medium hover:underline text-lg">+91 90197 88904</a>
                                             <a href="tel:+918049527803" className="text-blue-600 font-medium hover:underline text-lg">+91 80 49527803</a>
                                         </div>
